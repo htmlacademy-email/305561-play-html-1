@@ -7,6 +7,19 @@
 		<meta content="telephone=no" name="format-detection"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<title>HTML Academy: PlayHTML. Приглашение на курс</title>
+
+		<!-- фикс для решения проблемы с надстрочными индексами в Outlook -->
+		<!--[if gte mso 9]>
+		    <style>sup { font-size: 100% !important; }</style>
+		<![endif]-->
+
+		<!-- фикс для удаления подчёркивания гиперссылок в Outlook -->
+		<!--[if (mso 16)]>
+		    <style type="text/css">
+		      a {text-decoration: none;}
+		    </style>
+		 <![endif]-->
+
 		<!-- фикс для решения проблемы масштабирования DPI в Outlook -->
 		<!--[if gte mso 9]>
 		    <xml>
@@ -20,6 +33,15 @@
 			@media only screen and (max-width: 600px)  {
 				.container-568 {
 					max-width: 100% !important;
+				}
+
+				.adaptive-img {
+			        width: 100% !important;
+			        height: auto !important
+			    }
+
+			    .speaker__profession {
+					padding-bottom: 15px !important;
 				}
 
 				/*.col2-568 {
@@ -43,10 +65,7 @@
 					padding-left: 0px !important;
 				}
 
-				.adaptive-img {
-			        width: 100% !important;
-			        height: auto !important
-			    }*/
+				*/
 			}
 		</style>
 		</head>
@@ -200,7 +219,7 @@
 													<table class="bg-white" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="background-color: #FFFFFF;">
 														<tr>
 															<td class="m-0 p-0" align="center" style="Margin: 0; padding-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0;">
-																<img class="font tsa-none msolh fsz-18 lh-21 c-black d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/module2-task2/1-invitation/img/banner.png" alt="Изображение человека с ноутбуком" width="352" height="286" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
+																<img class="font tsa-none msolh fsz-18 lh-21 c-black d-b b-0 ol-n bicubic adaptive-img" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/module2-task2/1-invitation/img/banner.png" alt="Изображение человека с ноутбуком" width="352" height="286" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
 															</td>
 														</tr>
 													</table>
@@ -271,7 +290,7 @@
 									</table>
 
 									<!-- Блок 6: cпикер -->
-									<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+									<table class="speaker" cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
 										<tr>
 											<td class="bg-white c-black pl-16 pr-16 pt-40 ta-c" bgcolor="#FFFFFF" align="center" style="background-color: #FFFFFF; color: #000000; padding-left: 16px; padding-right: 16px; padding-top: 40px; text-align: center;">
 
@@ -292,21 +311,21 @@
 														</td>
 													</tr>
 													<tr>
-														<td class="pb-24" align="center" style="padding-bottom: 24px;">
+														<td class="speaker__profession" align="center" style="padding-bottom: 24px;">
 															<p class="m-0 font tsa-none msolh fsz-18 lh-21 c-black" style="Margin: 0; color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly;">Frontend-разработчик компании Cats Development</p>
 														</td>
 													</tr>
 													<tr>
-														<td align="center">
+														<td class="pl-25 pr-25" align="center" style="padding-left: 25px; padding-right: 25px;">
 															<!--[if mso]>
-															  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:37px;v-text-anchor:middle;width:299px;" arcsize="13%" strokecolor="#FF4B33" fillcolor="#FF4B33">
+															  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://htmlacademy.ru/vebinar/about" style="height:37px;v-text-anchor:middle;width:299px;" arcsize="13%" strokecolor="#FF4B33" fillcolor="#FF4B33">
 															    <w:anchorlock/>
 															    <center style="color:#ffffff;font-family: 'Trebuchet MS', Tahoma, sans-serif;font-size:18px;">Зарегистрироваться на вебинар</center>
 															  </v:roundrect>
 															<![endif]-->
 
 															<!--[if !mso]>-->
-															<a class="msosp-100 fsz-18 c-white td-none d-ib br-5 font fw-normal fs-normal tsa-none msolh bst-s bg-red bcl-red w-auto bw-button" href="https://htmlacademy.ru/vebinar/about" target="_blank" title="Ссылка на вебинар" style="background-color: #FF4B33; border-color: #FF4B33; border-radius: 5px; border-style: solid; border-width: 8px 16px; color: #FFFFFF; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; mso-line-height-rule: exactly; mso-style-priority: 100 !important; text-decoration: none; width: auto;">Зарегистрироваться на вебинар</a>
+															<a class="msosp-100 fsz-18 c-white td-none d-ib br-5 font fw-normal fs-normal tsa-none msolh bst-s bg-red bcl-red w-auto bw-button" href="https://htmlacademy.ru/vebinar/about" target="_blank" title="Ссылка на вебинар" style="background-color: #FF4B33; border-color: #FF4B33; border-radius: 5px; border-style: solid; border-width: 8px 16px; color: #FFFFFF; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; mso-line-height-rule: exactly; mso-style-priority: 100 !important; text-decoration: none; width: auto;">Зарегистрироваться на&nbsp;вебинар</a>
 															<!--<![endif]-->
 														</td>
 													</tr>
@@ -325,7 +344,7 @@
 													<tr>
 														<td class="pb-16" align="center" style="padding-bottom: 16px;">
 															<a href="https://htmlacademy.ru/vebinar/about" target="_blank" title="Ссылка на вебинар">
-																<img class="font tsa-none msolh fsz-18 lh-21 c-black d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/module2-task2/1-invitation/img/people.png" alt="Изображение людей с призами" width="278" height="278" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
+																<img class="font tsa-none msolh fsz-18 lh-21 c-black d-b b-0 ol-n bicubic adaptive-img" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/module2-task2/1-invitation/img/people.png" alt="Изображение людей с призами" width="278" height="278" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
 															</a>
 														</td>
 													</tr>
@@ -337,7 +356,7 @@
 													<tr>
 														<td class="pb-24" align="center" style="padding-bottom: 24px;">
 															<!--[if mso]>
-															  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:37px;v-text-anchor:middle;width:201px;" arcsize="13%" strokecolor="#FF4B33" fillcolor="#FF4B33">
+															  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://htmlacademy.ru/vebinar/about" style="height:37px;v-text-anchor:middle;width:201px;" arcsize="13%" strokecolor="#FF4B33" fillcolor="#FF4B33">
 															    <w:anchorlock/>
 															    <center style="color:#ffffff;font-family: 'Trebuchet MS', Tahoma, sans-serif;font-size:18px;">Зарегистрироваться</center>
 															  </v:roundrect>
@@ -389,7 +408,7 @@
 																	<tr>
 																		<td align="left" width="160">
 
-																			<table class="mso bs-0" cellpadding="0" cellspacing="0" border="0" align="center" width="100%" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																			<table class="mso bs-0 social" cellpadding="0" cellspacing="0" border="0" align="left" width="100%" style="border-spacing: 0px; display: block; float: left; font-size: 0px; max-width: 152px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 152px;">
 																				<tr>
 																					<td align="left" valign="top" class="p-0 m-0 pr-8 fl-l bs-bb" width="32" style="Margin: 0; box-sizing: border-box; float: left; padding-bottom: 0; padding-left: 0; padding-right: 8px; padding-top: 0;">
 																						<a class="d-b ico-footer" href="https://www.facebook.com/" target="_blank" title="ссылка на facebook" style="display: block; width: 24px;">

@@ -7,6 +7,19 @@
 		<meta content="telephone=no" name="format-detection"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<title>HTML Academy: PlayHTML. Акция</title>
+
+		<!-- фикс для решения проблемы с надстрочными индексами в Outlook -->
+		<!--[if gte mso 9]>
+		    <style>sup { font-size: 100% !important; }</style>
+		<![endif]-->
+
+		<!-- фикс для удаления подчёркивания гиперссылок в Outlook -->
+		<!--[if (mso 16)]>
+		    <style type="text/css">
+		      a {text-decoration: none;}
+		    </style>
+		 <![endif]-->
+
 		<!-- фикс для решения проблемы масштабирования DPI в Outlook -->
 		<!--[if gte mso 9]>
 		    <xml>
@@ -43,20 +56,54 @@
 					padding-bottom: 24px;
 				}
 
-				.banner-desktop-padding {
-					padding-left: 0 !important;
+				.banner {
+					padding-bottom: 20px !important;
 				}
 
-				/*.banner-border-mobile {
+				.banner-desktop-padding {
+					padding-left: 0 !important;
+					padding-top: 5px;
+				}
+
+				.banner__border-mobile {
 					border-top-right-radius: 15px;
 				}
 
-				.course__right,
-				.course__left {
+				.promo__title {
+					padding-bottom: 52px !important;
+				}
+
+				.promo__item {
+					padding-bottom: 32px !important;;
+				}
+
+				.promo__item--second {
+					padding-bottom: 32px !important;
+				}
+
+				.promo__item--last {
+					padding-bottom: 32px !important;;
+				}
+
+				.course__title {
+					/*padding-top: 32px !important;*/
+					padding-bottom: 24px !important;
+				}
+
+				.course__elem {
+					padding-top: 0 !important;
+					padding-bottom: 40px !important;
+				}
+
+				/*.course__name {
+					padding-bottom: 30px !important;
+				}*/
+
+				.course__item {
 					max-width: 100% !important;
 				}
 
-				.review__left,
+				/*.review__left,
 				.review__right {
 					max-width: 100% !important;
 				}
@@ -210,7 +257,7 @@
 									<!--Баннер с акцией-->
 									<table class="bg-white mso bs-0 btrr-15 btlr-15" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" align="center" style="background-color: #FFFFFF; border-spacing: 0px; border-top-left-radius: 15px; border-top-right-radius: 15px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 										<tr>
-											<td class="fsz-0 pb-32" align="center" style="font-size: 0px; padding-bottom: 32px;">
+											<td class="fsz-0 banner" align="center" style="font-size: 0px; padding-bottom: 32px;">
 
 												<!--[if mso]>
 												<table cellpadding="0" cellspacing="0" border="0">
@@ -222,7 +269,7 @@
 													<!--Баннер с акцией: колонка 1-->
 													<table class="mso bs-0" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 														<tr>
-															<td class="bg-red btlr-15 pl-20 pt-32 pb-35 pr-22 banner-border-mobile" bgcolor="#FF4B33" align="center" style="background-color: #FF4B33; border-top-left-radius: 15px; padding-bottom: 35px; padding-left: 20px; padding-right: 24px; padding-top: 32px;">
+															<td class="bg-red btlr-15 pl-20 pt-32 pb-35 pr-22 banner__border-mobile" bgcolor="#FF4B33" align="center" style="background-color: #FF4B33; border-top-left-radius: 15px; padding-bottom: 35px; padding-left: 20px; padding-right: 24px; padding-top: 32px;">
 
 																<!--Описание акции-->
 																<table class="mso bs-0" width="228" cellspacing="0" cellpadding="0" border="0" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
@@ -272,7 +319,7 @@
 												<div class="fsz-18 d-ib va-t col2-568" style="display: inline-block; font-size: 18px; max-width: 284px; vertical-align: top; width: 100%;">
 													<table cellspacing="0" cellpadding="0" border="0" width="100%" align="center">
 														<tr>
-															<td class="banner-desktop-padding" align="center" style="padding-left: 10px;">
+															<td class="banner-desktop-padding" align="center">
 																<img class="font tsa-none msolh c-black fsz-18 lh-21 d-b b-0 ol-n bicubic adaptive-img" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/module2-task2/3-promo/img/banner.png" alt="Иллюстрация - люди с воздушными шарами" width="284" height="271" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
 															</td>
 														</tr>
@@ -290,9 +337,9 @@
 									</table>
 
 									<!--Курсы, участвующие в акции-->
-									<table class="bg-white bbrr-15 bblr-15" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #FFFFFF; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;">
+									<table class="bg-white bbrr-15 bblr-15 promo" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #FFFFFF; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;">
 										<tr>
-											<td class="pr-16 pl-16 pb-24" align="center" style="padding-bottom: 24px; padding-left: 16px; padding-right: 16px;">
+											<td class="pr-16 pl-16 promo__title" align="center" style="padding-bottom: 24px; padding-left: 16px; padding-right: 16px;">
 												<h2 class="m-0 font tsa-none msolh h4 c-darkgray" style="Margin: 0; color: #141414; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 24px; font-weight: bold; line-height: 28px; mso-line-height-rule: exactly;"><b>Курсы, участвующие в&nbsp;акции</b></h2>
 											</td>
 										</tr>
@@ -314,7 +361,7 @@
 																<!--Курсы: колонка 1-->
 																<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
 																	<tr>
-																		<td align="center" valign="top">
+																		<td class="promo__item" align="center" valign="top" style="padding-bottom: 40px;">
 
 																			<table class="ta-c" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="text-align: center;">
 																				<tr>
@@ -360,7 +407,7 @@
 																<!--Курсы: колонка 2-->
 																<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
 																	<tr>
-																		<td align="center" valign="top">
+																		<td class="promo__item" align="center" valign="top" style="padding-bottom: 40px;">
 
 																			<table class="ta-c" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="text-align: center;">
 																				<tr>
@@ -406,9 +453,6 @@
 													</tr>
 												</table>
 
-												<div class="h-40" style="height: 40px;">
-												</div>
-
 												<!--Вторые два курса-->
 												<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
 													<tr>
@@ -424,7 +468,7 @@
 																<!--Курсы: колонка 1-->
 																<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
 																	<tr>
-																		<td align="center" valign="top">
+																		<td class="promo__item promo__item--second" align="center" valign="top" style="padding-bottom: 48px;">
 
 																			<table class="ta-c" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="text-align: center;">
 																				<tr>
@@ -470,7 +514,7 @@
 																<!--Курсы: колонка 2-->
 																<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
 																	<tr>
-																		<td align="center" valign="top">
+																		<td class="promo__item--second promo__item--last" align="center" valign="top" style="padding-bottom: 48px;">
 
 																			<table class="ta-c" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="text-align: center;">
 																				<tr>
@@ -516,8 +560,6 @@
 													</tr>
 												</table>
 
-												<div class="h-48" style="height: 48px;">
-												</div>
 											</td>
 										</tr>
 									</table>
@@ -624,9 +666,9 @@
 									</div>
 
 									<!--Популярные курсы-->
-									<table class="mso bs-0 bg-white btlr-15 btrr-15" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#FFFFFF" style="background-color: #FFFFFF; border-spacing: 0px; border-top-left-radius: 15px; border-top-right-radius: 15px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+									<table class="mso bs-0 bg-white btlr-15 btrr-15 course" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#FFFFFF" style="background-color: #FFFFFF; border-spacing: 0px; border-top-left-radius: 15px; border-top-right-radius: 15px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 										<tr>
-											<td class="pt-32 pb-28" align="center" style="padding-bottom: 28px; padding-top: 32px;">
+											<td class="pt-32 pb-28 course__title" align="center" style="padding-bottom: 28px; padding-top: 32px;">
 												<h2 class="m-0 font tsa-none msolh h4" style="Margin: 0; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 24px; font-weight: bold; line-height: 28px; mso-line-height-rule: exactly;"><b>Популярные курсы</b></h2>
 											</td>
 										</tr>
@@ -644,10 +686,10 @@
 															<![endif]-->
 
 															<!-- Колонка 1 -->
-															<div class="fsz-18 d-ib va-t course__left" style="display: inline-block; font-size: 18px; max-width: 180px; vertical-align: top; width: 100%;">
+															<div class="fsz-18 d-ib va-t course__item" style="display: inline-block; font-size: 18px; max-width: 180px; vertical-align: top; width: 100%;">
 																<table class="mso bs-0" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 																	<tr>
-																		<td class="pt-20 pb-16" align="center" style="padding-bottom: 16px; padding-top: 20px;">
+																		<td class="course__elem" align="center" style="padding-bottom: 16px; padding-top: 20px;">
 
 																			<table class="ta-c" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="text-align: center;">
 																				<tr>
@@ -658,13 +700,22 @@
 																					</td>
 																				</tr>
 																				<tr>
-																					<td class="pb-16" align="center" style="padding-bottom: 16px;">
-																						<a class="d-b m-0 font tsa-none msolh h-45 fsz-13 lh-16 fw-700 c-darkgray td-none" href="https://htmlacademy.ru/intensive/" target="_blank" title="Записаться на курс специалист по кибербезопасности" style="Margin: 0; color: #141414; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 13px; font-weight: 700; height: 45px; line-height: 16px; mso-line-height-rule: exactly; text-decoration: none;"><b>Специалист по&nbsp;кибербезопасности</b></a>
+																					<td class="course__name" align="center" style="height: 45px; padding-bottom: 16px; vertical-align: top;">
+																						<a class="d-b m-0 font tsa-none msolh h-45 fsz-13 lh-16 fw-700 c-darkgray td-none" href="https://htmlacademy.ru/intensive/" target="_blank" title="Записаться на курс специалист по кибербезопасности" style="Margin: 0; color: #141414; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 13px; font-weight: 700; height: 45px; line-height: 16px; mso-line-height-rule: exactly; text-decoration: none;"><b>Специалист<br/>по&nbsp;кибербезопасности</b><br/>&nbsp;</a>
 																					</td>
 																				</tr>
 																				<tr>
 																					<td align="center">
+																						<!--[if mso]>
+																						  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://htmlacademy.ru/intensive/" style="height:37px;v-text-anchor:middle;width:125px;" strokecolor="#FF4B33" fillcolor="#FF4B33">
+																						    <w:anchorlock/>
+																						    <center style="color:#ffffff;font-family: 'Trebuchet MS', Tahoma, sans-serif;font-size:18px;">Записаться</center>
+																						  </v:rect>
+																						<![endif]-->
+
+																						<!--[if !mso]>-->
 																						<a class="msosp-100 fsz-18 c-white td-none d-ib br-5 font fw-normal fs-normal tsa-none msolh bst-s bg-red bcl-red w-auto bw-button" href="https://htmlacademy.ru/intensive/" target="_blank" title="Записаться на курс специалист по кибербезопасности" style="background-color: #FF4B33; border-color: #FF4B33; border-radius: 5px; border-style: solid; border-width: 8px 16px; color: #FFFFFF; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; mso-line-height-rule: exactly; mso-style-priority: 100 !important; text-decoration: none; width: auto;">Записаться</a>
+																						<!--<![endif]-->
 																					</td>
 																				</tr>
 																			</table>
@@ -679,10 +730,10 @@
 															<td style="width:180px" valign="top">
 															<![endif]-->
 
-															<div class="fsz-18 d-ib va-t course__left" style="display: inline-block; font-size: 18px; max-width: 180px; vertical-align: top; width: 100%;">
+															<div class="fsz-18 d-ib va-t course__item" style="display: inline-block; font-size: 18px; max-width: 180px; vertical-align: top; width: 100%;">
 																<table class="mso bs-0" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 																	<tr>
-																		<td class="pt-20 pb-16" align="center" style="padding-bottom: 16px; padding-top: 20px;">
+																		<td class="course__elem" align="center" style="padding-bottom: 16px; padding-top: 20px;">
 
 																			<table class="ta-c" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="text-align: center;">
 																				<tr>
@@ -693,13 +744,22 @@
 																					</td>
 																				</tr>
 																				<tr>
-																					<td class="pb-16" align="center" style="padding-bottom: 16px;">
-																						<a class="d-b m-0 font tsa-none msolh h-45 fsz-13 lh-16 fw-700 c-darkgray td-none" href="https://htmlacademy.ru/intensive/" target="_blank" title="Записаться на курс Профессия Data Scientist: анализ данных" style="Margin: 0; color: #141414; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 13px; font-weight: 700; height: 45px; line-height: 16px; mso-line-height-rule: exactly; text-decoration: none;"><b>Профессия Data <br/> Scientist: анализ<br/> данных</b></a>
+																					<td class="course__name" align="center" style="height: 45px; padding-bottom: 16px; vertical-align: top;">
+																						<a class="d-b m-0 font tsa-none msolh h-45 fsz-13 lh-16 fw-700 c-darkgray td-none" href="https://htmlacademy.ru/intensive/" target="_blank" title="Записаться на курс Профессия Data Scientist: анализ данных" style="Margin: 0; color: #141414; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 13px; font-weight: 700; height: 45px; line-height: 16px; mso-line-height-rule: exactly; text-decoration: none;"><b>Профессия Data<br/> Scientist: анализ<br/>данных</b></a>
 																					</td>
 																				</tr>
 																				<tr>
 																					<td align="center">
+																						<!--[if mso]>
+																						  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://htmlacademy.ru/intensive/" style="height:37px;v-text-anchor:middle;width:125px;" strokecolor="#FF4B33" fillcolor="#FF4B33">
+																						    <w:anchorlock/>
+																						    <center style="color:#ffffff;font-family: 'Trebuchet MS', Tahoma, sans-serif;font-size:18px;">Записаться</center>
+																						  </v:rect>
+																						<![endif]-->
+
+																						<!--[if !mso]>-->
 																						<a class="msosp-100 fsz-18 c-white td-none d-ib br-5 font fw-normal fs-normal tsa-none msolh bst-s bg-red bcl-red w-auto bw-button" href="https://htmlacademy.ru/intensive/" target="_blank" title="Записаться на курс Профессия Data Scientist: анализ данных" style="background-color: #FF4B33; border-color: #FF4B33; border-radius: 5px; border-style: solid; border-width: 8px 16px; color: #FFFFFF; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; mso-line-height-rule: exactly; mso-style-priority: 100 !important; text-decoration: none; width: auto;">Записаться</a>
+																						<!--<![endif]-->
 																					</td>
 																				</tr>
 																			</table>
@@ -714,10 +774,10 @@
 															<td style="width:180px" valign="top">
 															<![endif]-->
 
-															<div class="fsz-18 d-ib va-t course__right" style="display: inline-block; font-size: 18px; max-width: 180px; vertical-align: top; width: 100%;">	
-																<table class="mso bs-0 course__right" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-spacing: 0px; max-width: 180px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
+															<div class="fsz-18 d-ib va-t course__item" style="display: inline-block; font-size: 18px; max-width: 180px; vertical-align: top; width: 100%;">	
+																<table class="mso bs-0" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 																	<tr>
-																		<td class="pt-20 pb-16" align="center" style="padding-bottom: 16px; padding-top: 20px;">
+																		<td class="course__elem" align="center" style="padding-bottom: 16px; padding-top: 20px;">
 
 																			<table class="ta-c" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="text-align: center;">
 																				<tr>
@@ -728,7 +788,7 @@
 																					</td>
 																				</tr>
 																				<tr>
-																					<td class="pb-16" align="center" style="padding-bottom: 16px;">
+																					<td class="course__name" align="center" style="height: 45px; padding-bottom: 16px; vertical-align: top;">
 																						<a class="d-b m-0 font tsa-none msolh h-45 fsz-13 lh-16 fw-700 c-darkgray td-none" href="https://htmlacademy.ru/intensive/" target="_blank" title="Записаться на курс Профессия  Разработчик игр на Unity с нуля до Middle" style="Margin: 0; color: #141414; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 13px; font-weight: 700; height: 45px; line-height: 16px; mso-line-height-rule: exactly; text-decoration: none;">
 																							<b>Профессия<br/> Разработчик игр<br/> на&nbsp;Unity с&nbsp;нуля до&nbsp;Middle</b>
 																						</a>
@@ -736,7 +796,16 @@
 																				</tr>
 																				<tr>
 																					<td align="center">
+																						<!--[if mso]>
+																						  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://htmlacademy.ru/intensive/" style="height:37px;v-text-anchor:middle;width:125px;" strokecolor="#FF4B33" fillcolor="#FF4B33">
+																						    <w:anchorlock/>
+																						    <center style="color:#ffffff;font-family: 'Trebuchet MS', Tahoma, sans-serif;font-size:18px;">Записаться</center>
+																						  </v:rect>
+																						<![endif]-->
+
+																						<!--[if !mso]>-->	
 																						<a class="msosp-100 fsz-18 c-white td-none d-ib br-5 font fw-normal fs-normal tsa-none msolh bst-s bg-red bcl-red w-auto bw-button" href="https://htmlacademy.ru/intensive/" target="_blank" title="Записаться на курс Профессия  Разработчик игр на Unity с нуля до Middle" style="background-color: #FF4B33; border-color: #FF4B33; border-radius: 5px; border-style: solid; border-width: 8px 16px; color: #FFFFFF; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; mso-line-height-rule: exactly; mso-style-priority: 100 !important; text-decoration: none; width: auto;">Записаться</a>
+																						<!--<![endif]-->
 																					</td>
 																				</tr>
 																			</table>
@@ -862,10 +931,10 @@
 																					<td class="h-18" style="height: 18px;">
 																					</td>
 																				</tr>
-																				<tr align="left">
-																					<td>
+																				<tr>
+																					<td align="left">
 
-																						<table class="mso bs-0" cellpadding="0" cellspacing="0" border="0" align="center" width="100%" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																						<table class="mso bs-0 social" cellpadding="0" cellspacing="0" border="0" align="left" width="152" style="border-spacing: 0px; display: block; float: left; font-size: 0px; max-width: 152px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 152px;">
 																							<tr>
 																								<td align="left" valign="top" class="p-0 m-0 pr-8 fl-l bs-bb" width="32" style="Margin: 0; box-sizing: border-box; float: left; padding-bottom: 0; padding-left: 0; padding-right: 8px; padding-top: 0;">
 																									<a class="d-b ico-footer" href="https://www.facebook.com/" target="_blank" title="ссылка на facebook" style="display: block; width: 24px;">
