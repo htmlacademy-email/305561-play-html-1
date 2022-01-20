@@ -31,12 +31,24 @@
 		<![endif]-->
 		<style type="text/css">
 			@media only screen and (max-width: 600px)  {
+				.container-600 {
+					/*max-width: 100% !important;*/
+					width: 100% !important;
+				}
+				
 				.container-568 {
-					max-width: 100% !important;
+					/*max-width: 100% !important;*/
+					width: 100% !important;
 				}
 
 				.col2-568 {
-					max-width: 100% !important;
+					/*max-width: 100% !important;*/
+					width: 100% !important;
+				}
+
+				.col2-536 {
+					/*max-width: 100% !important;*/
+					width: 100% !important;
 				}
 
 				.show-mobile {
@@ -69,16 +81,16 @@
 					padding-top: 5px;
 				}
 
-				.banner__border-mobile {
+				/*.banner__border-mobile {
 					border-top-right-radius: 15px;
-				}
+				}*/
 
 				.promo__title {
 					padding-bottom: 52px !important;
 				}
 
 				.promo__item {
-					padding-bottom: 32px !important;;
+					padding-bottom: 32px !important;
 				}
 
 				.promo__item--second {
@@ -86,7 +98,46 @@
 				}
 
 				.promo__item--last {
-					padding-bottom: 32px !important;;
+					padding-bottom: 32px !important;
+				}
+
+				
+
+				.review__left,
+				.review__right {
+					max-width: 100% !important;
+				}
+
+				/*.review-mobile-border {
+					padding-right: 16px;
+					padding-left: 16px;
+				}*/
+
+				/*.review__desktop-padding-left,
+				.review__desktop-padding-right {
+					padding-right: 0 !important;
+				}*/
+
+				.review__padding-desktop {
+					padding-right: 0 !important;
+				}
+
+				.review__left {
+					padding-right: 0 !important;
+				}
+
+				.review__desktop-padding-left {
+					padding-bottom: 27px;
+				}
+
+				.review__desktop-padding-right {
+					padding-bottom: 25px !important;
+				}
+
+				.review__btn {
+					padding-left: 0 !important;
+					text-align: center;
+					padding-bottom: 32px !important;
 				}
 
 				.course__title {
@@ -111,35 +162,6 @@
 					padding-bottom: 57px !important;
 				}
 
-				.review__left,
-				.review__right {
-					max-width: 100% !important;
-				}
-
-				.review-mobile-border {
-					padding-right: 16px;
-					padding-left: 16px;
-				}
-
-				.review__desktop-padding-left,
-				.review__desktop-padding-right {
-					padding-right: 0 !important;
-				}
-
-				.review__desktop-padding-left {
-					padding-bottom: 27px;
-				}
-
-				.review__desktop-padding-right {
-					padding-bottom: 25px !important;
-				}
-
-				.review__btn {
-					padding-left: 0 !important;
-					text-align: center;
-					padding-bottom: 32px !important;
-				}
-
 				.advantages__title {
 					padding-bottom: 42px !important;
 				}
@@ -150,7 +172,7 @@
 
 				.adaptive-img {
 			        width: 100% !important;
-			        height: auto !important
+			        height: auto !important;
 			    }
 
 			    .footer3 {
@@ -177,7 +199,7 @@
 		</head>
 
 	<!-- Обнулим дефолтные стили у тега body -->
-	<body class="w-100 p-0 m-0 font tsa-100" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; Margin: 0; font-family: 'Trebuchet MS', Tahoma, sans-serif; padding-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; width: 100%;">
+	<body class="w-100 p-0 m-0 font tsa-100" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; Margin: 0; Padding: 0; font-family: 'Trebuchet MS', Tahoma, sans-serif; width: 100%;">
 
 		<!-- Устанавливаем фон для общего контейнера.-->
 		<div class="bg-gray" style="background-color: #F6F6F6;">
@@ -199,60 +221,61 @@
 
 						<!-- START :: Контейнер -->
 						<!-- Outlook не поддерживает свойство max-width, специально для него создаем обертку с фиксированной шириной -->
-						<!--[if mso]>
+						<!--[if (gte mso 9)|(IE)]>
 						<table width="600" cellpadding="0" cellspacing="0" border="0">
 							<tr>
 								<td>
 						<![endif]-->
 
-						<table class="container-600" cellspacing="0" cellpadding="0" border="0" width="100%" align="center" style="max-width: 600px; width: 100%;">
+						<table class="container-600 mso bs-0" cellspacing="0" cellpadding="0" border="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 600px;">
 							<tr>
 								<td class="pl-16 pr-16" style="padding-left: 16px; padding-right: 16px;">
 
 									<!-- Блок 1 :: шапка письма-->
-									<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+									<table class="mso bs-0" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 										<tr>
 											<td class="fsz-0 header pt-52 pb-36 pl-16 pr-16" align="center" valign="top" dir="rtl" style="font-size: 0px; padding-bottom: 36px; padding-left: 16px; padding-right: 16px; padding-top: 52px;">
 
-												<!--[if mso]>
+												<!--[if (gte mso 9)|(IE)]>
 												<table cellpadding="0" cellspacing="0" border="0">
 													<tr>
 														<td style="width:268px;" valign="top">
 												<![endif]-->
 
-												<div class="fsz-18 d-ib va-t col2-536 ltr" style="direction: ltr; display: inline-block; font-size: 18px; max-width: 268px; vertical-align: top; width: 100%;">
+												<div class="fsz-18 d-ib va-t col2-536 ltr" style="direction: ltr; display: inline-block; font-size: 18px; vertical-align: top; width: 268px;">
 													<table class="mso bs-0" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 														<tr>
 															<td class="header__right" style="max-width: 245px; width: 100%;">
 
 																<!--Социальные сети-->
-																<table class="header__social" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="font-size: 0px; text-align: right;">
+																<table class="header__social mso bs-0" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="border-spacing: 0px; font-size: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: right;">
 																	<tr>
-																		<td class="header__social-text" align="right" style="display: inline-block; text-align: left; width: 80px;">
-																			<p class="m-0 fsz-11 c-black font tsa-none fsz-11 lh-24 msolh" style="Margin: 0; color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 11px; line-height: 24px; mso-line-height-rule: exactly;">Мы в соцсетях:</p>
+																		<td class="font fsz-11 lh-24 c-black header__social-text" align="right" width="95" style="color: #000000; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 11px; line-height: 24px; text-align: right; width: 95px;">
+																			<p class="m-0 c-black font tsa-none fsz-11 lh-24 msolh" style="Margin: 0; color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 11px; line-height: 24px; mso-line-height-rule: exactly;">Мы в соцсетях:</p>
 																		</td>
-																		<td align="center" valign="top" class="p-0 m-0 header__social-item header__social-item--first" style="Margin: 0; box-sizing: border-box; display: inline-block; padding-bottom: 0; padding-left: 10px; padding-right: 0; padding-top: 0; width: 32px;">
-																			<a class="d-ib" href="https://www.facebook.com/" target="_blank" title="ссылка на facebook" style="display: inline-block;">
+
+																		<td align="center" valign="top" class="font c-black fsz-18 lh-21 p-0 m-0 header__social-item" width="32" style="Margin: 0; Padding: 0; color: #000000; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; text-align: right; width: 32px;">
+																			<a class="font c-black fsz-18 lh-21 d-ib" href="https://www.facebook.com/" target="_blank" title="ссылка на facebook" style="color: #000000; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px;">
 																				<img class="font tsa-none msolh c-black fsz-18 lh-21 d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/facebook.png" alt="facebook" width="24" height="24" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
 																			</a>
 																		</td>
-																		<td align="center" valign="top" class="p-0 m-0 header__social-item" style="Margin: 0; box-sizing: border-box; display: inline-block; padding-bottom: 0; padding-left: 8px; padding-right: 0; padding-top: 0; width: 32px;">
-																			<a class="d-ib" href="https://www.instagram.com/" target="_blank" title="ссылка на instagram" style="display: inline-block;">
+																		<td align="center" valign="top" class="font c-black fsz-18 lh-21 p-0 m-0 header__social-item" width="32" style="Margin: 0; Padding: 0; color: #000000; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; text-align: right; width: 32px;">
+																			<a class="font c-black fsz-18 lh-21 d-ib" href="https://www.instagram.com/" target="_blank" title="ссылка на instagram" style="color: #000000; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px;">
 																				<img class="font tsa-none msolh c-black fsz-18 lh-21 d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/inst.png" alt="instagram" width="24" height="24" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
 																			</a>
 																		</td>
-																		<td align="center" valign="top" class="p-0 m-0 header__social-item" style="Margin: 0; box-sizing: border-box; display: inline-block; padding-bottom: 0; padding-left: 8px; padding-right: 0; padding-top: 0; width: 32px;">
-																			<a class="d-ib" href="https://www.youtube.com/" target="_blank" title="ссылка на youtube" style="display: inline-block;">
+																		<td align="center" valign="top" class="font c-black fsz-18 lh-21 p-0 m-0 header__social-item" width="32" style="Margin: 0; Padding: 0; color: #000000; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; text-align: right; width: 32px;">
+																			<a class="font c-black fsz-18 lh-21 d-ib" href="https://www.youtube.com/" target="_blank" title="ссылка на youtube" style="color: #000000; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px;">
 																				<img class="font tsa-none msolh c-black fsz-18 lh-21 d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/youtube.png" alt="youtube" width="24" height="24" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
 																			</a>
 																		</td>
-																		<td align="center" valign="top" class="p-0 m-0 header__social-item" style="Margin: 0; box-sizing: border-box; display: inline-block; padding-bottom: 0; padding-left: 8px; padding-right: 0; padding-top: 0; width: 32px;">
-																			<a class="d-ib" href="https://web.telegram.org" target="_blank" title="ссылка на telegram" style="display: inline-block;">
+																		<td align="center" valign="top" class="font c-black fsz-18 lh-21 p-0 m-0 header__social-item" width="32" style="Margin: 0; Padding: 0; color: #000000; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; text-align: right; width: 32px;">
+																			<a class="font c-black fsz-18 lh-21 d-ib" href="https://web.telegram.org" target="_blank" title="ссылка на telegram" style="color: #000000; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px;">
 																				<img class="font tsa-none msolh c-black fsz-18 lh-21 d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/telegram.png" alt="telegram" width="24" height="24" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
 																			</a>
 																		</td>
-																		<td align="center" valign="top" class="p-0 m-0 header__social-item" style="Margin: 0; box-sizing: border-box; display: inline-block; padding-bottom: 0; padding-left: 8px; padding-right: 0; padding-top: 0; width: 32px;">
-																			<a class="d-ib" href="https://vk.com/" target="_blank" title="ссылка на vkontakte" style="display: inline-block;">
+																		<td align="center" valign="top" class="font c-black fsz-18 lh-21 p-0 m-0 header__social-item" width="32" style="Margin: 0; Padding: 0; color: #000000; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; text-align: right; width: 32px;">
+																			<a class="font c-black fsz-18 lh-21 d-ib" href="https://vk.com/" target="_blank" title="ссылка на vkontakte" style="color: #000000; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px;">
 																				<img class="font tsa-none msolh c-black fsz-18 lh-21 d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/vk.png" alt="vkontakte" width="24" height="24" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
 																			</a>
 																		</td>
@@ -264,21 +287,21 @@
 													</table>
 												</div>
 
-												<!--[if mso]>
+												<!--[if (gte mso 9)|(IE)]>
 												</td>								
 												<td style="width:268px" valign="top">
 												<![endif]-->
 
-												<div class="fsz-18 d-ib va-t col2-536 ltr" style="direction: ltr; display: inline-block; font-size: 18px; max-width: 268px; vertical-align: top; width: 100%;">
+												<div class="fsz-18 d-ib va-t col2-536 ltr" style="direction: ltr; display: inline-block; font-size: 18px; vertical-align: top; width: 268px;">
 													<table class="mso bs-0" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 														<tr>
 															<td class="header__left" style="max-width: 140px; width: 100%;">
 
 																<!--Логотип-->
-																<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+																<table class="mso bs-0" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 																	<tr>
-																		<td class="header__logo" align="center" valign="top" style="text-align: left;">
-																			<a class="d-ib" href="https://htmlacademy.ru/" target="_blank" title="Ссылка на сервис" style="display: inline-block;">
+																		<td class="font c-black fsz-18 lh-21 header__logo" align="center" valign="top" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; text-align: left;">
+																			<a class="font c-black fsz-18 lh-21 d-ib" href="https://htmlacademy.ru/" target="_blank" title="Ссылка на сервис" style="color: #000000; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px;">
 																				<img class="font tsa-none msolh c-black fsz-18 lh-21 d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/logo.png" alt="PlayHTML" width="140" height="24" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
 																			</a>
 																		</td>
@@ -290,7 +313,7 @@
 													</table>
 												</div>
 
-												<!--[if mso]>
+												<!--[if (gte mso 9)|(IE)]>
 												</td>
 													</tr>
 														</table>
@@ -300,140 +323,58 @@
 										</tr>
 									</table>
 
-									<!--Баннер с акцией-->
-									<table class="bg-white mso bs-0 btrr-15 btlr-15" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" align="center" style="background-color: #FFFFFF; border-spacing: 0px; border-top-left-radius: 15px; border-top-right-radius: 15px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+									<!--Баннер с акцией + Курсы, участвующие в акции-->
+									<table class="bg-white mso bs-0 br-15 o-h" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" align="center" style="background-color: #FFFFFF; border-radius: 15px; border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; overflow: hidden;">
 										<tr>
-											<td class="fsz-0 banner" align="center" style="font-size: 0px; padding-bottom: 32px;">
+											<td class="fsz-0" align="center" style="font-size: 0px;">
 
-												<!--[if mso]>
-												<table cellpadding="0" cellspacing="0" border="0">
+												<!--Баннер с акцией-->
+												<table class="bg-white mso bs-0" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" align="center" style="background-color: #FFFFFF; border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 													<tr>
-														<td style="width:284px" valign="top">
-												<![endif]-->
+														<td class="fsz-0 banner" align="center" style="font-size: 0px; padding-bottom: 32px;">
 
-												<div class="fsz-18 d-ib va-t col2-568" style="display: inline-block; font-size: 18px; max-width: 284px; vertical-align: top; width: 100%;">
-													<!--Баннер с акцией: колонка 1-->
-													<table class="mso bs-0" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-														<tr>
-															<td class="bg-red btlr-15 pl-20 pt-32 pb-35 pr-22 banner__border-mobile" bgcolor="#FF4B33" align="center" style="background-color: #FF4B33; border-top-left-radius: 15px; padding-bottom: 35px; padding-left: 20px; padding-right: 24px; padding-top: 32px;">
-
-																<!--Описание акции-->
-																<table class="mso bs-0" width="228" cellspacing="0" cellpadding="0" border="0" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-																	<tr>
-																		<td class="pl-8" align="left" style="padding-left: 8px;">
-																			<p class="m-0 h1 c-white font msolh tsa-none tt-up" style="Margin: 0; color: #FFFFFF; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 36px; font-weight: bold; line-height: 42px; mso-line-height-rule: exactly; text-transform: uppercase;"><b>Акция</b></p>
-																		</td>
-																	</tr>
-																	<tr>
-																		<td class="pb-26 pl-8" align="left" style="padding-bottom: 26px; padding-left: 8px;">
-																			<p class="m-0 h3 c-white font msolh tsa-none" style="Margin: 0; color: #FFFFFF; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 28px; font-weight: bold; line-height: 32px; mso-line-height-rule: exactly;"><b>на наши курсы</b></p>
-																			<!--p class="m-0 h3 c-white font msolh tsa-none"><b>скидка</b></p-->
-																		</td>
-																	</tr>
-																	<tr>
-																		<td class="pb-16 pl-8" align="left" style="padding-bottom: 16px; padding-left: 8px;">
-																			<p class="m-0 h3 c-white font msolh tsa-none" style="Margin: 0; color: #FFFFFF; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 28px; font-weight: bold; line-height: 32px; mso-line-height-rule: exactly;"><b>скидка</b></p>
-																		</td>
-																	</tr>
-																	<tr>
-																		<td align="left">
-																			<table class="mso bs-0 bc-c" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-collapse: collapse; border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-																				<tr>
-																					<td align="left">
-																						<p class="m-0 font-t msolh tsa-none c-white fsz-56 lh-56" style="Margin: 0; color: #FFFFFF; font-family: Tahoma, Arial, sans-serif; font-size: 56px; line-height: 56px; mso-line-height-rule: exactly;"><b class="fw-700" style="font-weight: 700;">20%</b></p>
-																					</td>
-																					<td align="left">
-																						<p class="m-0 font msolh tsa-none c-white fsz-18 lh-21" style="Margin: 0; color: #FFFFFF; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly;">до конца <br/> июня</p>
-																					</td>
-																				</tr>
-																			</table>
-																		</td>
-																	</tr>
-																</table>
-
-															</td>
-														</tr>
-													</table>
-												</div>
-													
-												<!--[if mso]>
-												</td>								
-												<td style="width:284px" valign="top">
-												<![endif]-->
-
-												<!-- Баннер с акцией: колонка 2 -->
-												<div class="fsz-18 d-ib va-t col2-568" style="display: inline-block; font-size: 18px; max-width: 284px; vertical-align: top; width: 100%;">
-													<table cellspacing="0" cellpadding="0" border="0" width="100%" align="center">
-														<tr>
-															<td class="banner-desktop-padding" align="center">
-																<img class="font tsa-none msolh c-black fsz-18 lh-21 d-b b-0 ol-n bicubic adaptive-img" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/banner.png" alt="Иллюстрация - люди с воздушными шарами" width="284" height="271" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
-															</td>
-														</tr>
-													</table>
-												</div>
-
-												<!--[if mso]>
-												</td>
-													</tr>
-														</table>
-												<![endif]-->
-
-											</td>
-										</tr>
-									</table>
-
-									<!--Курсы, участвующие в акции-->
-									<table class="bg-white bbrr-15 bblr-15 promo" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #FFFFFF; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;">
-										<tr>
-											<td class="pr-16 pl-16 promo__title" align="center" style="padding-bottom: 24px; padding-left: 16px; padding-right: 16px;">
-												<h2 class="m-0 font tsa-none msolh h4 c-darkgray" style="Margin: 0; color: #141414; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 24px; font-weight: bold; line-height: 28px; mso-line-height-rule: exactly;"><b>Курсы, участвующие в&nbsp;акции</b></h2>
-											</td>
-										</tr>
-										<tr>
-											<td>
-
-												<!--Первые два курса-->
-												<table cellspacing="0" cellpadding="0" border="0" width="100%" align="center">
-													<tr>
-														<td class="fsz-0" align="center" valign="top" style="font-size: 0px;">
-
-															<!--[if mso]>
+															<!--[if (gte mso 9)|(IE)]>
 															<table cellpadding="0" cellspacing="0" border="0">
 																<tr>
 																	<td style="width:284px" valign="top">
 															<![endif]-->
 
-															<div class="fsz-18 d-ib va-t col2-568" style="display: inline-block; font-size: 18px; max-width: 284px; vertical-align: top; width: 100%;">
-																<!--Курсы: колонка 1-->
-																<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+															<div class="fsz-18 d-ib va-t col2-568" style="display: inline-block; font-size: 18px; vertical-align: top; width: 284px;">
+																<!--Баннер с акцией: колонка 1-->
+																<table class="mso bs-0" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 																	<tr>
-																		<td class="promo__item" align="center" valign="top" style="padding-bottom: 40px;">
+																		<td class="bg-red pl-20 pt-32 pb-35 pr-22 banner__border-mobile" bgcolor="#FF4B33" align="center" style="background-color: #FF4B33 !important; padding-bottom: 35px; padding-left: 20px; padding-right: 24px; padding-top: 32px;">
 
-																			<table class="ta-c" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="text-align: center;">
+																			<!--Описание акции-->
+																			<table class="mso bs-0" width="228" cellspacing="0" cellpadding="0" border="0" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 																				<tr>
-																					<td class="pb-16" align="center" style="padding-bottom: 16px;">
-																						<a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" title="Записаться на курс html+css начальный">
-																							<img class="font tsa-none msolh c-black fsz-18 lh-21 d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/html-logo.png" alt="Логотипы html5 css3" width="165" height="105" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
-																						</a>
+																					<td class="pl-8 font c-white h1" align="left" style="color: #FFFFFF; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 36px; font-weight: bold; line-height: 42px; padding-left: 8px;">
+																						<p class="m-0 h1 c-white font msolh tsa-none tt-up" style="Margin: 0; color: #FFFFFF; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 36px; font-weight: bold; line-height: 42px; mso-line-height-rule: exactly; text-transform: uppercase;"><b>Акция</b></p>
 																					</td>
 																				</tr>
 																				<tr>
-																					<td class="pb-18" align="center" style="padding-bottom: 18px;">
-																						<a class="font tsa-none msolh c-black fsz-16 lh-18 td-none" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" title="Записаться на курс html+css начальный" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 16px; mso-line-height-rule: exactly; text-decoration: none;"><b>Html+css начальный</b></a>
+																					<td class="font c-white h3 pb-26 pl-8" align="left" style="color: #FFFFFF; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 28px; font-weight: bold; line-height: 32px; padding-bottom: 26px; padding-left: 8px;">
+																						<p class="m-0 h3 c-white font msolh tsa-none" style="Margin: 0; color: #FFFFFF; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 28px; font-weight: bold; line-height: 32px; mso-line-height-rule: exactly;"><b>на наши курсы</b></p>
+																						<!--p class="m-0 h3 c-white font msolh tsa-none"><b>скидка</b></p-->
 																					</td>
 																				</tr>
 																				<tr>
-																					<td class="pb-16" align="center" style="padding-bottom: 16px;">
-																						<p class="m-0" style="Margin: 0;">
-																							<span class="font tsa-none msolh fsz-18 lh-21 c-gray" style="color: #828282; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly;"><s>15 000 руб.</s></span>
-																							&nbsp;&nbsp;&nbsp;&nbsp;
-																							<span class="font tsa-none msolh fsz-18 lh-21 c-red" style="color: #FF4B33; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly;">12 000</span> руб.
-																						</p>
+																					<td class="font c-white h3 pb-16 pl-8" align="left" style="color: #FFFFFF; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 28px; font-weight: bold; line-height: 32px; padding-bottom: 16px; padding-left: 8px;">
+																						<p class="m-0 h3 c-white font msolh tsa-none" style="Margin: 0; color: #FFFFFF; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 28px; font-weight: bold; line-height: 32px; mso-line-height-rule: exactly;"><b>скидка</b></p>
 																					</td>
 																				</tr>
 																				<tr>
-																					<td align="center">
-																						<a class="msosp-100 fsz-18 c-white td-none d-ib br-5 font fw-normal fs-normal tsa-none msolh bst-s bg-red bcl-blue w-auto bw-button bg-blue" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" title="Записаться на курс html+css начальный" style="background-color: #0B379B; border-color: #0B379B; border-radius: 5px; border-style: solid; border-width: 8px 16px; color: #FFFFFF; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; mso-line-height-rule: exactly; mso-style-priority: 100 !important; text-decoration: none; width: auto;">Записаться на курс</a>
+																					<td align="left">
+																						<table class="mso bs-0 bc-c" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-collapse: collapse; border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																							<tr>
+																								<td class="font c-white fsz-56 lh-56" align="left" style="color: #FFFFFF; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 56px; line-height: 56px;">
+																									<p class="m-0 font-t msolh tsa-none c-white fsz-56 lh-56" style="Margin: 0; color: #FFFFFF; font-family: Tahoma, Arial, sans-serif; font-size: 56px; line-height: 56px; mso-line-height-rule: exactly;"><b class="fw-700" style="font-weight: 700;">20%</b></p>
+																								</td>
+																								<td class="font c-white fsz-18 lh-21" align="left" style="color: #FFFFFF; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px;">
+																									<p class="m-0 font msolh tsa-none c-white fsz-18 lh-21" style="Margin: 0; color: #FFFFFF; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly;">до конца <br/> июня</p>
+																								</td>
+																							</tr>
+																						</table>
 																					</td>
 																				</tr>
 																			</table>
@@ -442,54 +383,24 @@
 																	</tr>
 																</table>
 															</div>
-
-															<!--[if mso]>
+																
+															<!--[if (gte mso 9)|(IE)]>
 															</td>								
 															<td style="width:284px" valign="top">
 															<![endif]-->
 
-															<div class="fsz-18 d-ib va-t col2-568" style="display: inline-block; font-size: 18px; max-width: 284px; vertical-align: top; width: 100%;">
-
-																<!--Курсы: колонка 2-->
-																<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+															<!-- Баннер с акцией: колонка 2 -->
+															<div class="fsz-18 d-ib va-t col2-568" style="display: inline-block; font-size: 18px; vertical-align: top; width: 284px;">
+																<table class="mso bs-0" cellspacing="0" cellpadding="0" border="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 																	<tr>
-																		<td class="promo__item" align="center" valign="top" style="padding-bottom: 40px;">
-
-																			<table class="ta-c" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="text-align: center;">
-																				<tr>
-																					<td class="pb-16" align="center" style="padding-bottom: 16px;">
-																						<a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="Записаться на курс html+css продвинутый">
-																							<img class="font tsa-none msolh c-black fsz-18 lh-21 d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/sass-logo.png" alt="Логотип sass" width="165" height="105" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
-																						</a>
-																					</td>
-																				</tr>
-																				<tr>
-																					<td class="pb-18" align="center" style="padding-bottom: 18px;">
-																						<a class="font tsa-none msolh c-black fsz-16 lh-18 td-none" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="Записаться на курс html+css продвинутый" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 16px; mso-line-height-rule: exactly; text-decoration: none;"><b>Html+css продвинутый</b></a>
-																					</td>
-																				</tr>
-																				<tr>
-																					<td class="pb-16" align="center" style="padding-bottom: 16px;">
-																						<p class="m-0" style="Margin: 0;">
-																							<span class="font tsa-none msolh fsz-18 lh-21 c-gray" style="color: #828282; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly;"><s>20 000 руб.</s></span>
-																							&nbsp;&nbsp;&nbsp;&nbsp;
-																							<span class="font tsa-none msolh fsz-18 lh-21 c-red" style="color: #FF4B33; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly;">16 000</span> руб.
-																						</p>
-																					</td>
-																				</tr>
-																				<tr>
-																					<td align="center">
-																						<a class="msosp-100 fsz-18 c-white td-none d-ib br-5 font fw-normal fs-normal tsa-none msolh bst-s bg-red bcl-blue w-auto bw-button bg-blue" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="Записаться на курс html+css продвинутый" style="background-color: #0B379B; border-color: #0B379B; border-radius: 5px; border-style: solid; border-width: 8px 16px; color: #FFFFFF; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; mso-line-height-rule: exactly; mso-style-priority: 100 !important; text-decoration: none; width: auto;">Записаться на курс</a>
-																					</td>
-																				</tr>
-																			</table>
-
+																		<td class="font c-black fsz-18 lh-21 banner-desktop-padding" align="center" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px;">
+																			<img class="font tsa-none msolh c-black fsz-18 lh-21 d-b b-0 ol-n bicubic adaptive-img" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/banner.png" alt="Иллюстрация - люди с воздушными шарами" width="284" height="271" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
 																		</td>
 																	</tr>
 																</table>
 															</div>
 
-															<!--[if mso]>
+															<!--[if (gte mso 9)|(IE)]>
 															</td>
 																</tr>
 																	</table>
@@ -499,108 +410,229 @@
 													</tr>
 												</table>
 
-												<!--Вторые два курса-->
-												<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+												<!--Курсы, участвующие в акции-->
+												<table class="bg-white promo mso bs-0" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #FFFFFF; border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 													<tr>
-														<td class="fsz-0" align="center" valign="top" style="font-size: 0px;">
+														<td class="font h4 c-darkgray pr-16 pl-16 promo__title" align="center" style="color: #141414; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 24px; font-weight: bold; line-height: 28px; padding-bottom: 24px; padding-left: 16px; padding-right: 16px;">
+															<h2 class="m-0 font tsa-none msolh h4 c-darkgray" style="Margin: 0; color: #141414; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 24px; font-weight: bold; line-height: 28px; mso-line-height-rule: exactly;"><b>Курсы, участвующие в&nbsp;акции</b></h2>
+														</td>
+													</tr>
+													<tr>
+														<td>
 
-															<!--[if mso]>
-															<table cellpadding="0" cellspacing="0" border="0">
+															<!--Первые два курса-->
+															<table class="mso bs-0" cellspacing="0" cellpadding="0" border="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 																<tr>
-																	<td style="width:284px" valign="top">
-															<![endif]-->
+																	<td class="fsz-0" align="center" valign="top" style="font-size: 0px;">
 
-															<div class="fsz-18 d-ib va-t col2-568" style="display: inline-block; font-size: 18px; max-width: 284px; vertical-align: top; width: 100%;">
-																<!--Курсы: колонка 1-->
-																<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
-																	<tr>
-																		<td class="promo__item promo__item--second" align="center" valign="top" style="padding-bottom: 48px;">
+																		<!--[if (gte mso 9)|(IE)]>
+																		<table cellpadding="0" cellspacing="0" border="0">
+																			<tr>
+																				<td style="width:284px" valign="top">
+																		<![endif]-->
 
-																			<table class="ta-c" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="text-align: center;">
+																		<div class="fsz-18 d-ib va-t col2-568" style="display: inline-block; font-size: 18px; vertical-align: top; width: 284px;">
+																			<!--Курсы: колонка 1-->
+																			<table class="mso bs-0" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 																				<tr>
-																					<td class="pb-16" align="center" style="padding-bottom: 16px;">
-																						<a href="https://htmlacademy.ru/intensive/photoshop" target="_blank" title="Записаться на курс Photoshop для верстальщика">
-																							<img class="font tsa-none msolh c-black fsz-18 lh-21 d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/ps-logo.png" alt="Логотип Photoshop" width="165" height="105" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
-																						</a>
-																					</td>
-																				</tr>
-																				<tr>
-																					<td class="pb-18" align="center" style="padding-bottom: 18px;">
-																						<a class="font tsa-none msolh c-black fsz-16 lh-18 td-none" href="https://htmlacademy.ru/intensive/photoshop" target="_blank" title="Записаться на курс Photoshop для верстальщика" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 16px; mso-line-height-rule: exactly; text-decoration: none;"><b>Photoshop для верстальщика</b></a>
-																					</td>
-																				</tr>
-																				<tr>
-																					<td class="pb-16" align="center" style="padding-bottom: 16px;">
-																						<p class="m-0" style="Margin: 0;">
-																							<span class="font tsa-none msolh fsz-18 lh-21 c-gray" style="color: #828282; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly;"><s>15 000 руб.</s></span>
-																							&nbsp;&nbsp;&nbsp;&nbsp;
-																							<span class="font tsa-none msolh fsz-18 lh-21 c-red" style="color: #FF4B33; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly;">12 000</span> руб.
-																						</p>
-																					</td>
-																				</tr>
-																				<tr>
-																					<td align="center">
-																						<a class="msosp-100 fsz-18 c-white td-none d-ib br-5 font fw-normal fs-normal tsa-none msolh bst-s bg-red bcl-blue w-auto bw-button bg-blue" href="https://htmlacademy.ru/intensive/photoshop" target="_blank" title="Записаться на курс Photoshop для верстальщика" style="background-color: #0B379B; border-color: #0B379B; border-radius: 5px; border-style: solid; border-width: 8px 16px; color: #FFFFFF; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; mso-line-height-rule: exactly; mso-style-priority: 100 !important; text-decoration: none; width: auto;">Записаться на курс</a>
-																					</td>
-																				</tr>
-																			</table>
+																					<td class="promo__item" align="center" valign="top" style="padding-bottom: 40px;">
 
-																		</td>
-																	</tr>
-																</table>
-															</div>
+																						<table class="ta-c mso bs-0" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: center;">
+																							<tr>
+																								<td class="font c-black fsz-18 lh-21 pb-16" align="center" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; padding-bottom: 16px;">
+																									<a class="font c-black fsz-18 lh-21" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" title="Записаться на курс html+css начальный" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px;">
+																										<img class="font tsa-none msolh c-black fsz-18 lh-21 d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/html-logo.png" alt="Логотипы html5 css3" width="165" height="105" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
+																									</a>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td class="pb-18 font c-black fsz-16 lh-18" align="center" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 16px; padding-bottom: 18px;">
+																									<a class="font tsa-none msolh c-black fsz-16 lh-18 td-none" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" title="Записаться на курс html+css начальный" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 16px; mso-line-height-rule: exactly; text-decoration: none;"><b>Html+css начальный</b></a>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td class="font fsz-18 lh-21 c-gray pb-16" align="center" style="color: #828282; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; padding-bottom: 16px;">
+																									<p class="m-0" style="Margin: 0;">
+																										<span class="font tsa-none msolh fsz-18 lh-21 c-gray" style="color: #828282; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly;"><s>15 000 руб.</s></span>
+																										&nbsp;&nbsp;&nbsp;&nbsp;
+																										<span class="font tsa-none msolh fsz-18 lh-21 c-red" style="color: #FF4B33; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly;">12 000</span> руб.
+																									</p>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td class="font c-white fsz-18" align="center" style="color: #FFFFFF; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px;">
+																									<a class="msosp-100 fsz-18 c-white td-none d-ib br-5 font fw-normal fs-normal tsa-none msolh bst-s bcl-blue w-auto bw-button bg-blue" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" title="Записаться на курс html+css начальный" style="background-color: #0B379B; border-color: #0B379B; border-radius: 5px; border-style: solid; border-width: 8px 16px; color: #FFFFFF; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; mso-line-height-rule: exactly; mso-style-priority: 100 !important; text-decoration: none; width: auto;">Записаться на курс</a>
+																								</td>
+																							</tr>
+																						</table>
 
-															<!--[if mso]>
-															</td>								
-															<td style="width:284px" valign="top">
-															<![endif]-->
-
-															<div class="fsz-18 d-ib va-t col2-568" style="display: inline-block; font-size: 18px; max-width: 284px; vertical-align: top; width: 100%;">
-
-																<!--Курсы: колонка 2-->
-																<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
-																	<tr>
-																		<td class="promo__item--second promo__item--last" align="center" valign="top" style="padding-bottom: 48px;">
-
-																			<table class="ta-c" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="text-align: center;">
-																				<tr>
-																					<td class="pb-16" align="center" style="padding-bottom: 16px;">
-																						<a href="https://htmlacademy.ru/intensive/javascript" target="_blank" title="Записаться на курс JS начальный">
-																							<img class="font tsa-none msolh c-black fsz-18 lh-21 d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/js-logo.png" alt="Логотипы html5 css3" width="165" height="105" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
-																						</a>
-																					</td>
-																				</tr>
-																				<tr>
-																					<td class="pb-18" align="center" style="padding-bottom: 18px;">
-																						<a class="font tsa-none msolh c-black fsz-16 lh-18 td-none" href="https://htmlacademy.ru/intensive/javascript" target="_blank" title="Записаться на курс JS начальный" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 16px; mso-line-height-rule: exactly; text-decoration: none;"><b>JS начальный</b></a>
-																					</td>
-																				</tr>
-																				<tr>
-																					<td class="pb-16" align="center" style="padding-bottom: 16px;">
-																						<p class="m-0" style="Margin: 0;">
-																							<span class="font tsa-none msolh fsz-18 lh-21 c-gray" style="color: #828282; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly;"><s>20 000 руб.</s></span>
-																							&nbsp;&nbsp;&nbsp;&nbsp;
-																							<span class="font tsa-none msolh fsz-18 lh-21 c-red" style="color: #FF4B33; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly;">16 000</span> руб.
-																						</p>
-																					</td>
-																				</tr>
-																				<tr>
-																					<td align="center">
-																						<a class="msosp-100 fsz-18 c-white td-none d-ib br-5 font fw-normal fs-normal tsa-none msolh bst-s bg-red bcl-blue w-auto bw-button bg-blue" href="https://htmlacademy.ru/intensive/javascript" target="_blank" title="Записаться на курс JS начальный" style="background-color: #0B379B; border-color: #0B379B; border-radius: 5px; border-style: solid; border-width: 8px 16px; color: #FFFFFF; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; mso-line-height-rule: exactly; mso-style-priority: 100 !important; text-decoration: none; width: auto;">Записаться на курс</a>
 																					</td>
 																				</tr>
 																			</table>
+																		</div>
 
+																		<!--[if (gte mso 9)|(IE)]>
+																		</td>								
+																		<td style="width:284px" valign="top">
+																		<![endif]-->
+
+																		<div class="fsz-18 d-ib va-t col2-568" style="display: inline-block; font-size: 18px; vertical-align: top; width: 284px;">
+
+																			<!--Курсы: колонка 2-->
+																			<table class="mso bs-0" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																				<tr>
+																					<td class="promo__item" align="center" valign="top" style="padding-bottom: 40px;">
+
+																						<table class="ta-c mso bs-0" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: center;">
+																							<tr>
+																								<td class="font c-black fsz-18 lh-21 pb-16" align="center" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; padding-bottom: 16px;">
+																									<a class="font c-black fsz-18 lh-21" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="Записаться на курс html+css продвинутый" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px;">
+																										<img class="font tsa-none msolh c-black fsz-18 lh-21 d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/sass-logo.png" alt="Логотип sass" width="165" height="105" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
+																									</a>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td class="pb-18 font c-black fsz-16 lh-18" align="center" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 16px; padding-bottom: 18px;">
+																									<a class="font tsa-none msolh c-black fsz-16 lh-18 td-none" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="Записаться на курс html+css продвинутый" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 16px; mso-line-height-rule: exactly; text-decoration: none;"><b>Html+css продвинутый</b></a>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td class="pb-16 font fsz-18 lh-21 c-gray" align="center" style="color: #828282; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; padding-bottom: 16px;">
+																									<p class="m-0" style="Margin: 0;">
+																										<span class="font tsa-none msolh fsz-18 lh-21 c-gray" style="color: #828282; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly;"><s>20 000 руб.</s></span>
+																										&nbsp;&nbsp;&nbsp;&nbsp;
+																										<span class="font tsa-none msolh fsz-18 lh-21 c-red" style="color: #FF4B33; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly;">16 000</span> руб.
+																									</p>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td class="font fsz-18 c-white" align="center" style="color: #FFFFFF; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px;">
+																									<a class="msosp-100 fsz-18 c-white td-none d-ib br-5 font fw-normal fs-normal tsa-none msolh bst-s bcl-blue w-auto bw-button bg-blue" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="Записаться на курс html+css продвинутый" style="background-color: #0B379B; border-color: #0B379B; border-radius: 5px; border-style: solid; border-width: 8px 16px; color: #FFFFFF; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; mso-line-height-rule: exactly; mso-style-priority: 100 !important; text-decoration: none; width: auto;">Записаться на курс</a>
+																								</td>
+																							</tr>
+																						</table>
+
+																					</td>
+																				</tr>
+																			</table>
+																		</div>
+
+																		<!--[if (gte mso 9)|(IE)]>
 																		</td>
-																	</tr>
-																</table>
-															</div>
+																			</tr>
+																				</table>
+																		<![endif]-->
 
-															<!--[if mso]>
-															</td>
+																	</td>
 																</tr>
-																	</table>
-															<![endif]-->
+															</table>
+
+															<!--Вторые два курса-->
+															<table class="mso bs-0" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																<tr>
+																	<td class="fsz-0" align="center" valign="top" style="font-size: 0px;">
+
+																		<!--[if (gte mso 9)|(IE)]>
+																		<table cellpadding="0" cellspacing="0" border="0">
+																			<tr>
+																				<td style="width:284px" valign="top">
+																		<![endif]-->
+
+																		<div class="fsz-18 d-ib va-t col2-568" style="display: inline-block; font-size: 18px; vertical-align: top; width: 284px;">
+																			<!--Курсы: колонка 1-->
+																			<table class="mso bs-0" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																				<tr>
+																					<td class="promo__item promo__item--second" align="center" valign="top" style="padding-bottom: 48px;">
+
+																						<table class="ta-c mso bs-0" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: center;">
+																							<tr>
+																								<td class="pb-16 font c-black fsz-18 lh-21" align="center" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; padding-bottom: 16px;">
+																									<a class="font c-black fsz-18 lh-21" href="https://htmlacademy.ru/intensive/photoshop" target="_blank" title="Записаться на курс Photoshop для верстальщика" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px;">
+																										<img class="font tsa-none msolh c-black fsz-18 lh-21 d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/ps-logo.png" alt="Логотип Photoshop" width="165" height="105" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
+																									</a>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td class="pb-18 font c-black fsz-16 lh-18" align="center" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 16px; padding-bottom: 18px;">
+																									<a class="font tsa-none msolh c-black fsz-16 lh-18 td-none" href="https://htmlacademy.ru/intensive/photoshop" target="_blank" title="Записаться на курс Photoshop для верстальщика" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 16px; mso-line-height-rule: exactly; text-decoration: none;"><b>Photoshop для верстальщика</b></a>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td class="font fsz-18 lh-21 c-gray pb-16" align="center" style="color: #828282; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; padding-bottom: 16px;">
+																									<p class="m-0" style="Margin: 0;">
+																										<span class="font tsa-none msolh fsz-18 lh-21 c-gray" style="color: #828282; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly;"><s>15 000 руб.</s></span>
+																										&nbsp;&nbsp;&nbsp;&nbsp;
+																										<span class="font tsa-none msolh fsz-18 lh-21 c-red" style="color: #FF4B33; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly;">12 000</span> руб.
+																									</p>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td class="font fsz-18 c-white" align="center" style="color: #FFFFFF; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px;">
+																									<a class="msosp-100 fsz-18 c-white td-none d-ib br-5 font fw-normal fs-normal tsa-none msolh bst-s bcl-blue w-auto bw-button bg-blue" href="https://htmlacademy.ru/intensive/photoshop" target="_blank" title="Записаться на курс Photoshop для верстальщика" style="background-color: #0B379B; border-color: #0B379B; border-radius: 5px; border-style: solid; border-width: 8px 16px; color: #FFFFFF; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; mso-line-height-rule: exactly; mso-style-priority: 100 !important; text-decoration: none; width: auto;">Записаться на курс</a>
+																								</td>
+																							</tr>
+																						</table>
+
+																					</td>
+																				</tr>
+																			</table>
+																		</div>
+
+																		<!--[if (gte mso 9)|(IE)]>
+																		</td>								
+																		<td style="width:284px" valign="top">
+																		<![endif]-->
+
+																		<div class="fsz-18 d-ib va-t col2-568" style="display: inline-block; font-size: 18px; vertical-align: top; width: 284px;">
+
+																			<!--Курсы: колонка 2-->
+																			<table class="mso bs-0" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																				<tr>
+																					<td class="promo__item--second promo__item--last" align="center" valign="top" style="padding-bottom: 48px;">
+
+																						<table class="ta-c mso bs-0" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: center;">
+																							<tr>
+																								<td class="font c-black fsz-18 lh-21 pb-16" align="center" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; padding-bottom: 16px;">
+																									<a class="font c-black fsz-18 lh-21" href="https://htmlacademy.ru/intensive/javascript" target="_blank" title="Записаться на курс JS начальный" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px;">
+																										<img class="font tsa-none msolh c-black fsz-18 lh-21 d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/js-logo.png" alt="Логотипы html5 css3" width="165" height="105" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
+																									</a>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td class="font c-black fsz-16 lh-18 pb-18" align="center" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 16px; padding-bottom: 18px;">
+																									<a class="font tsa-none msolh c-black fsz-16 lh-18 td-none" href="https://htmlacademy.ru/intensive/javascript" target="_blank" title="Записаться на курс JS начальный" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 16px; mso-line-height-rule: exactly; text-decoration: none;"><b>JS начальный</b></a>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td class="font fsz-18 lh-21 c-gray pb-16" align="center" style="color: #828282; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; padding-bottom: 16px;">
+																									<p class="m-0" style="Margin: 0;">
+																										<span class="font tsa-none msolh fsz-18 lh-21 c-gray" style="color: #828282; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly;"><s>20 000 руб.</s></span>
+																										&nbsp;&nbsp;&nbsp;&nbsp;
+																										<span class="font tsa-none msolh fsz-18 lh-21 c-red" style="color: #FF4B33; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly;">16 000</span> руб.
+																									</p>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td class="font fsz-18 c-white" align="center" style="color: #FFFFFF; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px;">
+																									<a class="msosp-100 fsz-18 c-white td-none d-ib br-5 font fw-normal fs-normal tsa-none msolh bst-s bcl-blue w-auto bw-button bg-blue" href="https://htmlacademy.ru/intensive/javascript" target="_blank" title="Записаться на курс JS начальный" style="background-color: #0B379B; border-color: #0B379B; border-radius: 5px; border-style: solid; border-width: 8px 16px; color: #FFFFFF; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; mso-line-height-rule: exactly; mso-style-priority: 100 !important; text-decoration: none; width: auto;">Записаться на курс</a>
+																								</td>
+																							</tr>
+																						</table>
+
+																					</td>
+																				</tr>
+																			</table>
+																		</div>
+
+																		<!--[if (gte mso 9)|(IE)]>
+																		</td>
+																			</tr>
+																				</table>
+																		<![endif]-->
+
+																	</td>
+																</tr>
+															</table>
 
 														</td>
 													</tr>
@@ -616,37 +648,37 @@
 									<!--Отзыв о курсе-->
 									<table class="mso bs-0 bg-white br-15" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" align="center" style="background-color: #FFFFFF; border-radius: 15px; border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 										<tr>
-											<td class="pl-16 pr-16 pt-32 pb-25" align="center" style="padding-bottom: 25px; padding-left: 16px; padding-right: 16px; padding-top: 32px;">
-												<h2 class="m-0 font tsa-none msolh h4" style="Margin: 0; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 24px; font-weight: bold; line-height: 28px; mso-line-height-rule: exactly;"><b>Отзыв о курсе</b></h2>
+											<td class="font h4 c-black pl-16 pr-16 pt-32 pb-25" align="center" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 24px; font-weight: bold; line-height: 28px; padding-bottom: 25px; padding-left: 16px; padding-right: 16px; padding-top: 32px;">
+												<h2 class="m-0 font tsa-none msolh h4 c-black" style="Margin: 0; color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 24px; font-weight: bold; line-height: 28px; mso-line-height-rule: exactly;"><b>Отзыв о курсе</b></h2>
 											</td>
 										</tr>
 										<tr>
 											<td>
 
-												<table cellspacing="0" cellpadding="0" border="0" width="100%" align="center">
+												<table class="mso bs-0" cellspacing="0" cellpadding="0" border="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 													<tr>
-														<td class="fsz-0" align="center" style="font-size: 0px;">
+														<td class="fsz-0 pl-16 pr-16" align="center" style="font-size: 0px; padding-left: 16px; padding-right: 16px;">
 
-															<!--[if mso]>
+															<!--[if (gte mso 9)|(IE)]>
 															<table cellpadding="0" cellspacing="0" border="0">
 																<tr>
-																	<td style="width:152px" valign="top">
+																	<td style="width:144px" valign="top">
 															<![endif]-->
 
 															<!-- Колонка с фото -->
-															<div class="d-ib va-t review__left" style="display: inline-block; max-width: 152px; vertical-align: top; width: 100%;">
+															<div class="d-ib va-t review__left" style="box-sizing: border-box; display: inline-block; max-width: 144px; vertical-align: top; width: 100%;">
 																<table class="mso bs-0" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 																	<tr>
-																		<td class="bs-bb review__desktop-padding-left" align="center" style="box-sizing: border-box; padding-right: 8px;">
+																		<td class="bs-bb review__padding-desktop" align="center" style="box-sizing: border-box; padding-right: 24px;">
 
-																			<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+																			<table class="mso bs-0" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 																				<tr>
-																					<td class="pb-8" align="center" style="padding-bottom: 8px;">
+																					<td class="font c-black fsz-18 lh-21 pb-8" align="center" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; padding-bottom: 8px;">
 																						<img class="font tsa-none msolh c-black fsz-18 lh-21 d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/photo.png" alt="Фото Анны" width="120" height="120" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
 																					</td>
 																				</tr>
 																				<tr>
-																					<td align="center">
+																					<td class="font c-darkgray fsz-18 lh-21 pb-28" align="center" style="color: #141414; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; padding-bottom: 28px;">
 																						<p class="m-0 font tsa-none msolh c-darkgray fsz-18 lh-21" style="Margin: 0; color: #141414; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly;">Анна</p>
 																					</td>
 																				</tr>
@@ -657,31 +689,26 @@
 																</table>
 															</div>
 																		
-															<!--[if mso]>
+															<!--[if (gte mso 9)|(IE)]>
 															</td>								
-															<td style="width:404px" valign="top">
+															<td style="width:392px" valign="top">
 															<![endif]-->
 
 															<!-- Колонка с отзывом -->
-															<div class="fsz-18 d-ib va-t review__right" style="display: inline-block; font-size: 18px; max-width: 404px; vertical-align: top; width: 100%;">
+															<div class="fsz-18 d-ib va-t review__right" style="display: inline-block; font-size: 18px; max-width: 392px; vertical-align: top; width: 100%;">
 																<table class="mso bs-0" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 																	<tr>
 																		<td class="review-mobile-border" align="left">
 
-																			<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+																			<table class="mso bs-0" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 																				<tr>
-																					<td class="pb-16" align="left" style="padding-bottom: 16px;">
+																					<td class="font fsz-16 lh-18 c-green pb-16" align="left" style="color: #13D6C3; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 16px; padding-bottom: 16px;">
 																						<p class="m-0 font tsa-none msolh fsz-16 lh-18 c-green fw-700" style="Margin: 0; color: #13D6C3; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 16px; font-weight: 700; mso-line-height-rule: exactly;"><b>Очень понравился курс!</b></p>
 																					</td>
 																				</tr>
 																				<tr>
-																					<td class="review__desktop-padding-right pb-40" align="left" style="padding-bottom: 40px; padding-right: 12px;">
+																					<td class="font c-black fsz-18 lh-21 review__desktop-padding-right pb-40" align="left" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; padding-bottom: 40px;">
 																						<p class="m-0 font tsa-none msolh c-black fsz-18 lh-21" style="Margin: 0; color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly;">Так как я&nbsp;уже имела дело с&nbsp;HTML и&nbsp;CSS, <br class="show-mobile" style="display: none;"/>то&nbsp;в&nbsp;принципе никаких трудностей у&nbsp;меня не&nbsp;возникло. Хотелось&nbsp;бы просто указать маленький (почти незаметный минус, который не&nbsp;влияет на&nbsp;восприятие материала): в&nbsp;практических заданиях, как мне показалось будет засчитано задание, если все указал в&nbsp;верном порядке (в&nbsp;случае свойств это сделать все&nbsp;же ну&nbsp;очень сложно).</p>
-																					</td>
-																				</tr>
-																				<tr>
-																					<td class="review__btn" style="padding-bottom: 48px; padding-left: 28px;">
-																						<a class="msosp-100 fsz-18 c-white td-none d-ib br-5 font fw-normal fs-normal tsa-none msolh bst-s bg-red bcl-red w-auto bw-button" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" title="Записаться на курс html и css начальный" style="background-color: #FF4B33; border-color: #FF4B33; border-radius: 5px; border-style: solid; border-width: 8px 16px; color: #FFFFFF; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; mso-line-height-rule: exactly; mso-style-priority: 100 !important; text-decoration: none; width: auto;">Записаться на курс</a>
 																					</td>
 																				</tr>
 																			</table>
@@ -691,12 +718,26 @@
 																</table>
 															</div>
 
-															<!--[if mso]>
+															<!--[if (gte mso 9)|(IE)]>
 															</td>
 																</tr>
 																	</table>
 															<![endif]-->
 
+														</td>
+													</tr>
+													<tr>
+														<td class="font fsz-18 c-white review__btn" align="center" style="color: #FFFFFF; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; padding-bottom: 48px;">
+															<!--[if mso]>
+															  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://htmlacademy.ru/intensive/" style="height:37px;v-text-anchor:middle;width:192px;" strokecolor="#FF4B33" fillcolor="#FF4B33">
+															    <w:anchorlock/>
+															    <center style="color:#ffffff;font-family: 'Trebuchet MS', Tahoma, sans-serif;font-size:18px;">Записаться на курс</center>
+															  </v:rect>
+															<![endif]-->
+
+															<!--[if !mso]>-->
+																<a class="msosp-100 fsz-18 c-white td-none d-ib br-5 font fw-normal fs-normal tsa-none msolh bst-s bg-red bcl-red w-auto bw-button" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" title="Записаться на курс html и css начальный" style="background-color: #FF4B33 !important; border-color: #FF4B33; border-radius: 5px; border-style: solid; border-width: 8px 16px; color: #FFFFFF; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; mso-line-height-rule: exactly; mso-style-priority: 100 !important; text-decoration: none; width: auto;">Записаться на курс</a>
+															<!--[endif]-->
 														</td>
 													</tr>
 												</table>
@@ -711,18 +752,18 @@
 									<!--Популярные курсы-->
 									<table class="mso bs-0 bg-white btlr-15 btrr-15 course" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#FFFFFF" style="background-color: #FFFFFF; border-spacing: 0px; border-top-left-radius: 15px; border-top-right-radius: 15px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 										<tr>
-											<td class="pt-32 pb-28 course__title" align="center" style="padding-bottom: 28px; padding-top: 32px;">
-												<h2 class="m-0 font tsa-none msolh h4" style="Margin: 0; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 24px; font-weight: bold; line-height: 28px; mso-line-height-rule: exactly;"><b>Популярные курсы</b></h2>
+											<td class="font h4 c-black pt-32 pb-28 course__title" align="center" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 24px; font-weight: bold; line-height: 28px; padding-bottom: 28px; padding-top: 32px;">
+												<h2 class="m-0 font tsa-none msolh h4 c-black" style="Margin: 0; color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 24px; font-weight: bold; line-height: 28px; mso-line-height-rule: exactly;"><b>Популярные курсы</b></h2>
 											</td>
 										</tr>
 										<tr>
 											<td>
 
-												<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+												<table class="mso bs-0" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 													<tr>
 														<td class="fsz-0" align="center" style="font-size: 0px;">
 
-															<!--[if mso]>
+															<!--[if (gte mso 9)|(IE)]>
 															<table cellpadding="0" cellspacing="0" border="0">
 																<tr>
 																	<td style="width:189px" valign="top">
@@ -734,21 +775,21 @@
 																	<tr>
 																		<td class="course__elem" align="center" style="padding-bottom: 16px; padding-top: 20px;">
 
-																			<table class="ta-c" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="text-align: center;">
+																			<table class="ta-c mso bs-0" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: center;">
 																				<tr>
-																					<td class="pb-16" align="center" style="padding-bottom: 16px;">
+																					<td class="font c-black fsz-18 lh-21 pb-16" align="center" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; padding-bottom: 16px;">
 																						<a class="d-b" href="https://htmlacademy.ru/intensive/" target="_blank" title="Записаться на курс специалист по кибербезопасности" style="display: block;">
 																							<img class="font tsa-none msolh c-black fsz-18 lh-21 d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/course-1.png" alt="Иконка - щит" width="48" height="56" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
 																						</a>
 																					</td>
 																				</tr>
 																				<tr>
-																					<td class="course__name" align="center" style="height: 45px; padding-bottom: 16px; vertical-align: top;">
+																					<td class="font fsz-13 lh-16 c-darkgray course__name" align="center" style="color: #141414; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 13px; height: 45px; line-height: 16px; padding-bottom: 16px; vertical-align: top;">
 																						<a class="d-b m-0 font tsa-none msolh h-45 fsz-13 lh-16 fw-700 c-darkgray td-none" href="https://htmlacademy.ru/intensive/" target="_blank" title="Записаться на курс специалист по кибербезопасности" style="Margin: 0; color: #141414; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 13px; font-weight: 700; height: 45px; line-height: 16px; mso-line-height-rule: exactly; text-decoration: none;"><b>Специалист<br/>по&nbsp;кибербезопасности</b><br/>&nbsp;</a>
 																					</td>
 																				</tr>
 																				<tr>
-																					<td align="center">
+																					<td class="font fsz-18 c-white" align="center" style="color: #FFFFFF; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px;">
 																						<!--[if mso]>
 																						  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://htmlacademy.ru/intensive/" style="height:37px;v-text-anchor:middle;width:125px;" strokecolor="#FF4B33" fillcolor="#FF4B33">
 																						    <w:anchorlock/>
@@ -757,7 +798,7 @@
 																						<![endif]-->
 
 																						<!--[if !mso]>-->
-																						<a class="msosp-100 fsz-18 c-white td-none d-ib br-5 font fw-normal fs-normal tsa-none msolh bst-s bg-red bcl-red w-auto bw-button" href="https://htmlacademy.ru/intensive/" target="_blank" title="Записаться на курс специалист по кибербезопасности" style="background-color: #FF4B33; border-color: #FF4B33; border-radius: 5px; border-style: solid; border-width: 8px 16px; color: #FFFFFF; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; mso-line-height-rule: exactly; mso-style-priority: 100 !important; text-decoration: none; width: auto;">Записаться</a>
+																						<a class="msosp-100 fsz-18 c-white td-none d-ib br-5 font fw-normal fs-normal tsa-none msolh bst-s bg-red bcl-red w-auto bw-button" href="https://htmlacademy.ru/intensive/" target="_blank" title="Записаться на курс специалист по кибербезопасности" style="background-color: #FF4B33 !important; border-color: #FF4B33; border-radius: 5px; border-style: solid; border-width: 8px 16px; color: #FFFFFF; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; mso-line-height-rule: exactly; mso-style-priority: 100 !important; text-decoration: none; width: auto;">Записаться</a>
 																						<!--<![endif]-->
 																					</td>
 																				</tr>
@@ -768,7 +809,7 @@
 																</table>
 															</div>
 
-															<!--[if mso]>
+															<!--[if (gte mso 9)|(IE)]>
 															</td>								
 															<td style="width:180px" valign="top">
 															<![endif]-->
@@ -778,21 +819,21 @@
 																	<tr>
 																		<td class="course__elem" align="center" style="padding-bottom: 16px; padding-top: 20px;">
 
-																			<table class="ta-c" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="text-align: center;">
+																			<table class="ta-c mso bs-0" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: center;">
 																				<tr>
-																					<td class="pb-16" align="center" style="padding-bottom: 16px;">
-																						<a class="d-b" href="https://htmlacademy.ru/intensive/" target="_blank" title="Записаться на курс Профессия Data Scientist: анализ данных" style="display: block;">
+																					<td class="pb-16 font c-black fsz-18 lh-21" align="center" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; padding-bottom: 16px;">
+																						<a class="d-b font c-black fsz-18 lh-21" href="https://htmlacademy.ru/intensive/" target="_blank" title="Записаться на курс Профессия Data Scientist: анализ данных" style="color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px;">
 																							<img class="font tsa-none msolh c-black fsz-18 lh-21 d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/course-2.png" alt="Иконка - big data" width="48" height="56" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
 																						</a>
 																					</td>
 																				</tr>
 																				<tr>
-																					<td class="course__name" align="center" style="height: 45px; padding-bottom: 16px; vertical-align: top;">
+																					<td class="font fsz-13 lh-16 c-darkgray course__name" align="center" style="color: #141414; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 13px; height: 45px; line-height: 16px; padding-bottom: 16px; vertical-align: top;">
 																						<a class="d-b m-0 font tsa-none msolh h-45 fsz-13 lh-16 fw-700 c-darkgray td-none" href="https://htmlacademy.ru/intensive/" target="_blank" title="Записаться на курс Профессия Data Scientist: анализ данных" style="Margin: 0; color: #141414; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 13px; font-weight: 700; height: 45px; line-height: 16px; mso-line-height-rule: exactly; text-decoration: none;"><b>Профессия Data<br/> Scientist: анализ<br/>данных</b></a>
 																					</td>
 																				</tr>
 																				<tr>
-																					<td align="center">
+																					<td class="font fsz-18 c-white" align="center" style="color: #FFFFFF; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px;">
 																						<!--[if mso]>
 																						  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://htmlacademy.ru/intensive/" style="height:37px;v-text-anchor:middle;width:125px;" strokecolor="#FF4B33" fillcolor="#FF4B33">
 																						    <w:anchorlock/>
@@ -801,7 +842,7 @@
 																						<![endif]-->
 
 																						<!--[if !mso]>-->
-																						<a class="msosp-100 fsz-18 c-white td-none d-ib br-5 font fw-normal fs-normal tsa-none msolh bst-s bg-red bcl-red w-auto bw-button" href="https://htmlacademy.ru/intensive/" target="_blank" title="Записаться на курс Профессия Data Scientist: анализ данных" style="background-color: #FF4B33; border-color: #FF4B33; border-radius: 5px; border-style: solid; border-width: 8px 16px; color: #FFFFFF; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; mso-line-height-rule: exactly; mso-style-priority: 100 !important; text-decoration: none; width: auto;">Записаться</a>
+																						<a class="msosp-100 fsz-18 c-white td-none d-ib br-5 font fw-normal fs-normal tsa-none msolh bst-s bg-red bcl-red w-auto bw-button" href="https://htmlacademy.ru/intensive/" target="_blank" title="Записаться на курс Профессия Data Scientist: анализ данных" style="background-color: #FF4B33 !important; border-color: #FF4B33; border-radius: 5px; border-style: solid; border-width: 8px 16px; color: #FFFFFF; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; mso-line-height-rule: exactly; mso-style-priority: 100 !important; text-decoration: none; width: auto;">Записаться</a>
 																						<!--<![endif]-->
 																					</td>
 																				</tr>
@@ -812,7 +853,7 @@
 																</table>
 															</div>
 																		
-															<!--[if mso]>
+															<!--[if (gte mso 9)|(IE)]>
 															</td>								
 															<td style="width:180px" valign="top">
 															<![endif]-->
@@ -822,23 +863,23 @@
 																	<tr>
 																		<td class="course__elem" align="center" style="padding-bottom: 16px; padding-top: 20px;">
 
-																			<table class="ta-c" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="text-align: center;">
+																			<table class="ta-c mso bs-0" width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: center;">
 																				<tr>
-																					<td class="pb-16" align="center" style="padding-bottom: 16px;">
-																						<a class="d-b" href="https://htmlacademy.ru/intensive/" target="_blank" title="Записаться на курс Профессия  Разработчик игр на Unity с нуля до Middle" style="display: block;">
+																					<td class="font c-black fsz-18 lh-21 pb-16" align="center" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; padding-bottom: 16px;">
+																						<a class="font c-black fsz-18 lh-21 d-b" href="https://htmlacademy.ru/intensive/" target="_blank" title="Записаться на курс Профессия  Разработчик игр на Unity с нуля до Middle" style="color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px;">
 																							<img class="font tsa-none msolh c-black fsz-18 lh-21 d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/course-3.png" alt="Иконка - геймпад" width="48" height="56" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
 																						</a>
 																					</td>
 																				</tr>
 																				<tr>
-																					<td class="course__name" align="center" style="height: 45px; padding-bottom: 16px; vertical-align: top;">
+																					<td class="font fsz-13 lh-16 c-darkgray course__name" align="center" style="color: #141414; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 13px; height: 45px; line-height: 16px; padding-bottom: 16px; vertical-align: top;">
 																						<a class="d-b m-0 font tsa-none msolh h-45 fsz-13 lh-16 fw-700 c-darkgray td-none" href="https://htmlacademy.ru/intensive/" target="_blank" title="Записаться на курс Профессия  Разработчик игр на Unity с нуля до Middle" style="Margin: 0; color: #141414; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 13px; font-weight: 700; height: 45px; line-height: 16px; mso-line-height-rule: exactly; text-decoration: none;">
 																							<b>Профессия<br/> Разработчик игр<br/> на&nbsp;Unity с&nbsp;нуля до&nbsp;Middle</b>
 																						</a>
 																					</td>
 																				</tr>
 																				<tr>
-																					<td align="center">
+																					<td class="font fsz-18 c-white" align="center" style="color: #FFFFFF; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px;">
 																						<!--[if mso]>
 																						  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://htmlacademy.ru/intensive/" style="height:37px;v-text-anchor:middle;width:125px;" strokecolor="#FF4B33" fillcolor="#FF4B33">
 																						    <w:anchorlock/>
@@ -847,7 +888,7 @@
 																						<![endif]-->
 
 																						<!--[if !mso]>-->	
-																						<a class="msosp-100 fsz-18 c-white td-none d-ib br-5 font fw-normal fs-normal tsa-none msolh bst-s bg-red bcl-red w-auto bw-button" href="https://htmlacademy.ru/intensive/" target="_blank" title="Записаться на курс Профессия  Разработчик игр на Unity с нуля до Middle" style="background-color: #FF4B33; border-color: #FF4B33; border-radius: 5px; border-style: solid; border-width: 8px 16px; color: #FFFFFF; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; mso-line-height-rule: exactly; mso-style-priority: 100 !important; text-decoration: none; width: auto;">Записаться</a>
+																						<a class="msosp-100 fsz-18 c-white td-none d-ib br-5 font fw-normal fs-normal tsa-none msolh bst-s bg-red bcl-red w-auto bw-button" href="https://htmlacademy.ru/intensive/" target="_blank" title="Записаться на курс Профессия  Разработчик игр на Unity с нуля до Middle" style="background-color: #FF4B33 !important; border-color: #FF4B33; border-radius: 5px; border-style: solid; border-width: 8px 16px; color: #FFFFFF; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; mso-line-height-rule: exactly; mso-style-priority: 100 !important; text-decoration: none; width: auto;">Записаться</a>
 																						<!--<![endif]-->
 																					</td>
 																				</tr>
@@ -858,7 +899,7 @@
 																</table>
 															</div>
 
-															<!--[if mso]>
+															<!--[if (gte mso 9)|(IE)]>
 															</td>
 																</tr>
 																	</table>
@@ -871,21 +912,22 @@
 											</td>
 										</tr>
 										<tr>
-											<td align="center">
+											<td class="font c-black fsz-18 lh-21" align="center" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px;">
 												<img class="font tsa-none msolh c-black fsz-18 lh-21 d-b b-0 ol-n bicubic adaptive-img" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/people.png" alt="Изображение людей у доски с графиками" width="300" height="300" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
 											</td>
 										</tr>
 										<tr>
-											<td class="course__btn" align="center" style="padding-bottom: 50px;">
-												<a class="msosp-100 fsz-18 c-white td-none d-ib br-5 font fw-normal fs-normal tsa-none msolh bst-s bg-red bcl-blue w-auto bw-button bg-blue" href="https://htmlacademy.ru/intensive" target="_blank" title="Ссылка на все курсы" style="background-color: #0B379B; border-color: #0B379B; border-radius: 5px; border-style: solid; border-width: 8px 16px; color: #FFFFFF; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; mso-line-height-rule: exactly; mso-style-priority: 100 !important; text-decoration: none; width: auto;">Все курсы</a>
+											<td class="font fsz-18 c-white course__btn" align="center" style="color: #FFFFFF; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; padding-bottom: 50px;">
+												<a class="msosp-100 fsz-18 c-white td-none d-ib br-5 font fw-normal fs-normal tsa-none msolh bst-s bcl-blue w-auto bw-button bg-blue" href="https://htmlacademy.ru/intensive" target="_blank" title="Ссылка на все курсы" style="background-color: #0B379B; border-color: #0B379B; border-radius: 5px; border-style: solid; border-width: 8px 16px; color: #FFFFFF; display: inline-block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; mso-line-height-rule: exactly; mso-style-priority: 100 !important; text-decoration: none; width: auto;">Все курсы</a>
 											</td>
 										</tr>
 									</table>
 
+									
 									<!--Преимущества обучения у нас-->
 									<table class="mso bs-0 bg-white bbrr-15 bblr-15 advantages" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#FFFFFF" align="center" style="background-color: #FFFFFF; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 										<tr>
-											<td class="pl-16 pr-16 advantages__title" align="center" valign="top" style="padding-bottom: 24px; padding-left: 16px; padding-right: 16px;">
+											<td class="font h4 c-darkgray pl-16 pr-16 advantages__title" align="center" valign="top" style="color: #141414; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 24px; font-weight: bold; line-height: 28px; padding-bottom: 24px; padding-left: 16px; padding-right: 16px;">
 												<h2 class="m-0 font tsa-none msolh h4 c-darkgray" style="Margin: 0; color: #141414; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 24px; font-weight: bold; line-height: 28px; mso-line-height-rule: exactly;"><b>Преимущества обучения у&nbsp;нас</b></h2>
 											</td>
 										</tr>
@@ -893,13 +935,13 @@
 										<tr>
 											<td class="pl-16 pr-16" align="center" valign="top" style="padding-left: 16px; padding-right: 16px;">
 												
-												<table cellpadding="0" cellspacing="0" border="0" width="100%">
+												<table class="mso bs-0" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 													<tr>
-														<td class="pr-16" valign="top" style="padding-right: 16px;">
+														<td class="font c-black fsz-18 lh-21 pr-16" valign="top" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; padding-right: 16px;">
 															<img class="font tsa-none msolh c-black fsz-18 lh-21 d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/icon-1.png" alt="Смайлик" width="40" height="40" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
 														</td>
-														<td valign="top">
-															<p class="m-0 font tsa-none msolh fsz-18 lh-21 fw-normal" style="Margin: 0; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-weight: normal; line-height: 21px; mso-line-height-rule: exactly;"><b class="fw-700" style="font-weight: 700;">Более 30 курсов</b><br/>Как для новичков, так и&nbsp;для практикующих разработчиков.</p>
+														<td class="font fsz-18 lh-21 c-black" valign="top" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px;">
+															<p class="m-0 font tsa-none msolh fsz-18 lh-21 fw-normal c-black" style="Margin: 0; color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-weight: normal; line-height: 21px; mso-line-height-rule: exactly;"><b class="fw-700" style="font-weight: 700;">Более 30 курсов</b><br/>Как для новичков, так и&nbsp;для практикующих разработчиков.</p>
 														</td>
 													</tr>
 
@@ -908,11 +950,11 @@
 													</tr>
 
 													<tr>
-														<td class="pr-16" valign="top" style="padding-right: 16px;">
+														<td class="font fsz-18 lh-21 c-black pr-16" valign="top" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; padding-right: 16px;">
 															<img class="font tsa-none msolh c-black fsz-18 lh-21 d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/icon-2.png" alt="Часы" width="40" height="40" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
 														</td>
-														<td valign="top">
-															<p class="m-0 font tsa-none msolh fsz-18 lh-21 fw-normal" style="Margin: 0; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-weight: normal; line-height: 21px; mso-line-height-rule: exactly;"><b class="fw-700" style="font-weight: 700;">Только актуальные знания</b><br/>Все преподаватели являются практикующими разработчиками, следят за&nbsp;трендами и&nbsp;постоянно обновляют программу курса.</p>
+														<td class="font fsz-18 lh-21 c-black" valign="top" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px;">
+															<p class="m-0 font tsa-none msolh fsz-18 lh-21 c-black fw-normal" style="Margin: 0; color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-weight: normal; line-height: 21px; mso-line-height-rule: exactly;"><b class="fw-700" style="font-weight: 700;">Только актуальные знания</b><br/>Все преподаватели являются практикующими разработчиками, следят за&nbsp;трендами и&nbsp;постоянно обновляют программу курса.</p>
 														</td>
 													</tr>
 
@@ -921,10 +963,10 @@
 													</tr>
 
 													<tr>
-														<td class="pr-16" valign="top" style="padding-right: 16px;">
+														<td class="font fsz-18 lh-21 c-black pr-16" valign="top" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; padding-right: 16px;">
 															<img class="font tsa-none msolh c-black fsz-18 lh-21 d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/icon-3.png" alt="Прицел" width="40" height="40" border="0" style="-ms-interpolation-mode: bicubic; border: 0; color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
 														</td>
-														<td valign="top">
+														<td class="font fsz-18 lh-21 c-black" valign="top" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px;">
 															<p class="m-0 font tsa-none msolh fsz-18 lh-21 fw-normal" style="Margin: 0; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; font-weight: normal; line-height: 21px; mso-line-height-rule: exactly;"><b class="fw-700" style="font-weight: 700;">База лучших вакансий</b><br/>Выпускники получают доступ к&nbsp;базе<br class="show-mobile" style="display: none;"/> вакансий от&nbsp;ведущих работодателей.</p>
 														</td>
 													</tr>
@@ -945,28 +987,28 @@
 									<!--Подвал-->
 									<table class="mso bs-0" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 										<tr>
-											<td class="bg-white btrr-15 btlr-15 footer3" bgcolor="#FFFFFF" style="background-color: #FFFFFF; border-top-left-radius: 15px; border-top-right-radius: 15px; padding-bottom: 26px; padding-top: 32px;">
+											<td class="bg-white btrr-15 btlr-15 footer3" bgcolor="#FFFFFF" style="background-color: #FFFFFF; border-top-left-radius: 15px; border-top-right-radius: 15px; padding-top: 32px;">
 
 
-												<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+												<table class="mso bs-0" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 													<tr>
-														<td class="container-padding-16 fsz-0 footer3__wrapper" align="left" valign="top" style="font-size: 0px; padding-bottom: 26px; padding-left: 16px; padding-right: 16px;">
+														<td class="fsz-0 pr-16 pl-16 footer3__wrapper" align="left" valign="top" style="font-size: 0px; padding-bottom: 26px; padding-left: 16px; padding-right: 16px;">
 
-															<!--[if mso]>
+															<!--[if (gte mso 9)|(IE)]>
 															<table cellpadding="0" cellspacing="0" border="0">
 																<tr>
 																	<td style="width:268px" valign="top">
 															<![endif]-->
 
-															<div class="fsz-18 d-ib va-t col2-536" style="display: inline-block; font-size: 18px; max-width: 268px; vertical-align: top; width: 100%;">
-																<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+															<div class="fsz-18 d-ib va-t col2-536" style="display: inline-block; font-size: 18px; vertical-align: top; width: 268px;">
+																<table class="mso bs-0" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 																	<tr>
 																		<td class="footer3__left" align="left" valign="top">
 																			
 																			<!--Подвал: социальные сети-->
-																			<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+																			<table class="mso bs-0" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 																				<tr>
-																					<td>
+																					<td class="font fsz-16 lh-18 c-gray33" style="color: #333333; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 16px;">
 																						<p class="m-0 font tsa-none msolh fsz-16 lh-18 c-gray33" style="Margin: 0; color: #333333; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 16px; mso-line-height-rule: exactly;"><b>Мы в социальных сетях</b></p>
 																					</td>
 																				</tr>
@@ -979,28 +1021,28 @@
 
 																						<table class="mso bs-0 social" cellpadding="0" cellspacing="0" border="0" align="left" width="152" style="border-spacing: 0px; display: block; float: left; font-size: 0px; max-width: 152px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 152px;">
 																							<tr>
-																								<td align="left" valign="top" class="p-0 m-0 pr-8 fl-l bs-bb" width="32" style="Margin: 0; box-sizing: border-box; float: left; padding-bottom: 0; padding-left: 0; padding-right: 8px; padding-top: 0;">
-																									<a class="d-b ico-footer" href="https://www.facebook.com/" target="_blank" title="ссылка на facebook" style="display: block; width: 24px;">
+																								<td class="font fsz-18 lh-21 c-black" align="left" valign="top" width="32" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px;">
+																									<a class="font fsz-18 lh-21 c-black d-b ico-footer" href="https://www.facebook.com/" target="_blank" title="ссылка на facebook" style="color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; width: 24px;">
 																										<img class="font tsa-none msolh fsz-18 lh-21 d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/facebook.png" alt="facebook" width="24" height="24" border="0" style="-ms-interpolation-mode: bicubic; border: 0; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
 																									</a>
 																								</td>
-																								<td align="left" valign="top" class="p-0 m-0 pr-8 fl-l bs-bb" width="32" style="Margin: 0; box-sizing: border-box; float: left; padding-bottom: 0; padding-left: 0; padding-right: 8px; padding-top: 0;">
-																									<a class="d-b ico-footer" href="https://www.instagram.com/" target="_blank" title="ссылка на instagram" style="display: block; width: 24px;">
+																								<td class="font fsz-18 lh-21 c-black" align="left" valign="top" width="32" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px;">
+																									<a class="font fsz-18 lh-21 c-black d-b ico-footer" href="https://www.instagram.com/" target="_blank" title="ссылка на instagram" style="color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; width: 24px;">
 																										<img class="font tsa-none msolh fsz-18 lh-21 d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/inst.png" alt="instagram" width="24" height="24" border="0" style="-ms-interpolation-mode: bicubic; border: 0; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
 																									</a>
 																								</td>
-																								<td align="left" valign="top" class="p-0 m-0 pr-8 fl-l bs-bb" width="32" style="Margin: 0; box-sizing: border-box; float: left; padding-bottom: 0; padding-left: 0; padding-right: 8px; padding-top: 0;">
-																									<a class="d-b ico-footer" href="https://www.youtube.com/" target="_blank" title="ссылка на youtube" style="display: block; width: 24px;">
+																								<td class="font fsz-18 lh-21 c-black" align="left" valign="top" width="32" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px;">
+																									<a class="font fsz-18 lh-21 c-black d-b ico-footer" href="https://www.youtube.com/" target="_blank" title="ссылка на youtube" style="color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; width: 24px;">
 																										<img class="font tsa-none msolh fsz-18 lh-21 d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/youtube.png" alt="youtube" width="24" height="24" border="0" style="-ms-interpolation-mode: bicubic; border: 0; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
 																									</a>
 																								</td>
-																								<td align="left" valign="top" class="p-0 m-0 pr-8 fl-l bs-bb" width="32" style="Margin: 0; box-sizing: border-box; float: left; padding-bottom: 0; padding-left: 0; padding-right: 8px; padding-top: 0;">
-																									<a class="d-b ico-footer" href="https://web.telegram.org" target="_blank" title="ссылка на telegram" style="display: block; width: 24px;">
+																								<td class="font fsz-18 lh-21 c-black" align="left" valign="top" width="32" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px;">
+																									<a class="font fsz-18 lh-21 c-black d-b ico-footer" href="https://web.telegram.org" target="_blank" title="ссылка на telegram" style="color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; width: 24px;">
 																										<img class="font tsa-none msolh fsz-18 lh-21 d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/telegram.png" alt="telegram" width="24" height="24" border="0" style="-ms-interpolation-mode: bicubic; border: 0; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
 																									</a>
 																								</td>
-																								<td align="left" valign="top" class="p-0 m-0 fl-l bs-bb" width="24" style="Margin: 0; box-sizing: border-box; float: left; padding-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0;">
-																									<a class="d-b ico-footer" href="https://vk.com/" target="_blank" title="ссылка на vkontakte" style="display: block; width: 24px;">
+																								<td class="font fsz-18 lh-21 c-black" align="left" valign="top" width="24" style="color: #000000; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px;">
+																									<a class="font fsz-18 lh-21 c-black d-b ico-footer" href="https://vk.com/" target="_blank" title="ссылка на vkontakte" style="color: #000000; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; width: 24px;">
 																										<img class="font tsa-none msolh fsz-18 lh-21 d-b b-0 ol-n bicubic" src="https://raw.githubusercontent.com/Anna-Teshkina/305561-play-html-1/master/3-promo/img/vk.png" alt="vkontakte" width="24" height="24" border="0" style="-ms-interpolation-mode: bicubic; border: 0; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 18px; line-height: 21px; mso-line-height-rule: exactly; outline: none;"/>
 																									</a>
 																								</td>
@@ -1016,9 +1058,9 @@
 																			</table>
 
 																			<!--Подвал: контакты-->
-																			<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+																			<table class="mso bs-0" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 																				<tr>
-																					<td>
+																					<td class="font fsz-16 lh-18 c-gray33" style="color: #333333; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 16px;">
 																						<p class="m-0 font tsa-none msolh fsz-16 lh-18 c-gray33" style="Margin: 0; color: #333333; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 16px; mso-line-height-rule: exactly;"><b>Свяжитесь с нами</b></p>
 																					</td>
 																				</tr>
@@ -1027,12 +1069,12 @@
 																					</td>
 																				</tr>
 																				<tr>
-																					<td class="pb-8" align="left" style="padding-bottom: 8px;">
+																					<td class="pb-8 fsz-14 lh-16 c-green" align="left" style="color: #13D6C3; font-size: 14px; line-height: 16px; padding-bottom: 8px;">
 																						<a class="font tsa-none msolh fsz-14 lh-16 c-green td-none d-b" href="mailto:study@htmlacademy.ru" target="_blank" title="Отправить email" style="color: #13D6C3; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 14px; line-height: 16px; mso-line-height-rule: exactly; text-decoration: none;">study@htmlacademy.ru</a>
 																					</td>
 																				</tr>
 																				<tr>
-																					<td align="left">
+																					<td class="font fsz-14 lh-16 c-green" align="left" style="color: #13D6C3; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 14px; line-height: 16px;">
 																						<a class="font tsa-none msolh fsz-14 lh-16 c-green td-none d-b" href="tel:88006907668" target="_blank" title="Позвоните нам" style="color: #13D6C3; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 14px; line-height: 16px; mso-line-height-rule: exactly; text-decoration: none;">8-800-690-76-68</a>
 																					</td>
 																				</tr>
@@ -1043,19 +1085,19 @@
 																</table>
 															</div>
 
-															<!--[if mso]>
+															<!--[if (gte mso 9)|(IE)]>
 															</td>								
 															<td style="width:268px" valign="top">
 															<![endif]-->
 
-															<div class="fsz-18 d-ib va-t col2-536 bs-bb" style="box-sizing: border-box; display: inline-block; font-size: 18px; max-width: 268px; vertical-align: top; width: 100%;">
-																<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+															<div class="fsz-18 d-ib va-t col2-536 bs-bb" style="box-sizing: border-box; display: inline-block; font-size: 18px; vertical-align: top; width: 268px;">
+																<table class="mso bs-0" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 																	<tr>
 																		<td class="footer3__right" align="left" valign="top" style="padding-left: 16px;">
 
 																			<table class="mso bs-0" cellpadding="0" cellspacing="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 																				<tr>
-																					<td>
+																					<td class="font fsz-16 lh-18 c-gray33" style="color: #333333; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 16px;">
 																						<p class="m-0 font tsa-none msolh fsz-16 lh-18 c-gray33" style="Margin: 0; color: #333333; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 16px; mso-line-height-rule: exactly;"><b>Полезные ссылки</b></p>
 																					</td>
 																				</tr>
@@ -1064,27 +1106,27 @@
 																					</td>
 																				</tr>
 																				<tr>
-																					<td class="pb-8" align="left" style="padding-bottom: 8px;">
+																					<td class="font fsz-14 lh-16 c-darkgray pb-8" align="left" style="color: #141414; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 14px; line-height: 16px; padding-bottom: 8px;">
 																						<a class="font tsa-none msolh fsz-14 lh-16 td-undln c-darkgray d-b" href="https://htmlacademy.ru/" target="_blank" title="Ссылка на сервис" style="color: #141414; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 14px; line-height: 16px; mso-line-height-rule: exactly; text-decoration: underline;">Бесплатные вебинары</a>
 																					</td>
 																				</tr>
 																				<tr>
-																					<td class="pb-8" align="left" style="padding-bottom: 8px;">
+																					<td class="font fsz-14 lh-16 c-darkgray pb-8" align="left" style="color: #141414; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 14px; line-height: 16px; padding-bottom: 8px;">
 																						<a class="font tsa-none msolh fsz-14 lh-16 td-undln c-darkgray d-b" href="https://htmlacademy.ru/" target="_blank" title="Ссылка на сервис" style="color: #141414; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 14px; line-height: 16px; mso-line-height-rule: exactly; text-decoration: underline;">Обучающие курсы</a>
 																					</td>
 																				</tr>
 																				<tr>
-																					<td class="pb-8" align="left" style="padding-bottom: 8px;">
+																					<td class="font fsz-14 lh-16 c-darkgray pb-8" align="left" style="color: #141414; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 14px; line-height: 16px; padding-bottom: 8px;">
 																						<a class="font tsa-none msolh fsz-14 lh-16 td-undln c-darkgray d-b" href="https://htmlacademy.ru/" target="_blank" title="Ссылка на сервис" style="color: #141414; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 14px; line-height: 16px; mso-line-height-rule: exactly; text-decoration: underline;">Тесты</a>
 																					</td>
 																				</tr>
 																				<tr>
-																					<td class="pb-8" align="left" style="padding-bottom: 8px;">
+																					<td class="font fsz-14 lh-16 c-darkgray pb-8" align="left" style="color: #141414; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 14px; line-height: 16px; padding-bottom: 8px;">
 																						<a class="font tsa-none msolh fsz-14 lh-16 td-undln c-darkgray d-b" href="https://htmlacademy.ru/" target="_blank" title="Ссылка на сервис" style="color: #141414; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 14px; line-height: 16px; mso-line-height-rule: exactly; text-decoration: underline;">Наш блог</a>
 																					</td>
 																				</tr>
 																				<tr>
-																					<td align="left">
+																					<td class="font fsz-14 lh-16 c-darkgray" align="left" style="color: #141414; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 14px; line-height: 16px;">
 																						<a class="font tsa-none msolh fsz-14 lh-16 td-undln c-darkgray d-b" href="https://htmlacademy.ru/" target="_blank" title="Ссылка на сервис" style="color: #141414; display: block; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 14px; line-height: 16px; mso-line-height-rule: exactly; text-decoration: underline;">Истории студентов</a>
 																					</td>
 																				</tr>
@@ -1095,7 +1137,7 @@
 																</table>
 															</div>
 
-															<!--[if mso]>
+															<!--[if (gte mso 9)|(IE)]>
 															</td>
 																</tr>
 																	</table>
@@ -1113,18 +1155,18 @@
 			                                  	</table>
 												
 												<!--Информация получателю-->
-												<table cellpadding="0" cellspacing="0" width="100%" align="center">
+												<table class="mso bs-0" cellpadding="0" cellspacing="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 													<tr>
 														<td class="bg-white c-gray pl-16 pr-16 pt-35 fsz-11 lh-13" bgcolor="#FFFFFF" style="background-color: #FFFFFF; color: #828282; font-size: 11px; line-height: 13px; padding-left: 16px; padding-right: 16px;">
 
-															<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+															<table class="mso bs-0" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-spacing: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 																<tr>
-																	<td class="pb-12 info2" align="left" style="padding-bottom: 12px; padding-top: 32px;">
+																	<td class="font fsz-11 lh-13 c-gray pb-12 info2" align="left" style="color: #828282; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 11px; line-height: 13px; padding-bottom: 12px; padding-top: 32px;">
 																		<p class="m-0 font tsa-none msolh fsz-11 lh-13 c-gray" style="Margin: 0; color: #828282; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 11px; line-height: 13px; mso-line-height-rule: exactly;">Вы&nbsp;получили это письмо, так как являетесь пользователем портала HTMLPlay. Рассылка производится в&nbsp;соответствии<br class="show-mobile" style="display: none;"/> с&nbsp;пользовательским соглашением. Если вы не&nbsp;хотите получать рассылку, вы&nbsp;можете <a class="c-gray font tsa-none msolh td-undln" href="#" target="_blank" title="Отписаться от рассылки" style="color: #828282; font-family: 'Trebuchet MS', Tahoma, sans-serif; mso-line-height-rule: exactly; text-decoration: underline;">отписаться</a> или <a class="c-gray font tsa-none msolh td-undln" href="#" target="_blank" title="Настроить параметры рассылки" style="color: #828282; font-family: 'Trebuchet MS', Tahoma, sans-serif; mso-line-height-rule: exactly; text-decoration: underline;">настроить параметры</a>.</p>
 																	</td>
 																</tr>
 																<tr>
-																	<td align="left">
+																	<td class="font fsz-11 lh-13 c-gray" align="left" style="color: #828282; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 11px; line-height: 13px;">
 																		<p class="m-0 font tsa-none msolh fsz-11 lh-13 c-gray" style="Margin: 0; color: #828282; font-family: 'Trebuchet MS', Tahoma, sans-serif; font-size: 11px; line-height: 13px; mso-line-height-rule: exactly;">Если письмо отображается некорректно или вы хотите им&nbsp;поделиться, <a class="c-gray " href="#" target="_blank" title="Поделиться письмом или сообщить о некорректном отображении рассылки" style="color: #828282;">жмите сюда</a>.</p>
 																	</td>
 																</tr>
@@ -1146,7 +1188,7 @@
 							</tr>
 						</table>
 
-						<!--[if mso]>
+						<!--[if (gte mso 9)|(IE)]>
 								</td>
 							</tr>
 						</table>
